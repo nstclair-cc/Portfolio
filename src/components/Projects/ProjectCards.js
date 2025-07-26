@@ -8,9 +8,19 @@ import { DiGoogleDrive } from "react-icons/di";
 function ProjectCards(props) {
   return (
     <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+      {/* Use custom renderImage if provided, else default */}
+      {props.renderImage ? (
+        props.renderImage()
+      ) : (
+        <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+      )}
       <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
+        {/* Use custom renderTitle if provided, else default */}
+        {props.renderTitle ? (
+          props.renderTitle()
+        ) : (
+          <Card.Title>{props.title}</Card.Title>
+        )}
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
