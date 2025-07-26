@@ -12,8 +12,12 @@ function Github() {
         username="nstclair-cc"
         blockSize={15}
         blockMargin={5}
-        color="#f5f5f6"
+        color="#22223b" // darkest color for most activity
         fontSize={16}
+        // color for less activity (lightest) to more activity (darkest)
+        theme={{
+          light: ["#f5f5f6", "#c9c9e3", "#a3a3d1", "#6c6ca8", "#22223b"]
+        }}
       />
     </Row>
   );

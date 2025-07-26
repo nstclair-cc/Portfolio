@@ -15,39 +15,18 @@ function Home2() {
             <h1 style={{ fontSize: "2.6em" }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
-            <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
-              <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> C++, Javascript and Go. </b>
-              </i>
-              <br />
-              <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
-              </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
-            </p>
+           <p className="home-about-body">
+            I’m a UX researcher, educator, and QA engineer passionate about making tools that help people think, learn, and solve meaningful problems.
+            <br />
+            <br />
+            Whether it’s automating workflows in <b className="purple">data science education</b>, researching how students interpret real-time graphs, or launching open-source tools for classrooms, I focus on clarity, accessibility, and real-world impact.
+            <br />
+            <br />
+            My background bridges <i><b className="purple">math, art, and technology</b></i> — and I’m happiest working on interdisciplinary teams where curiosity, creativity, and thoughtful design meet.
+            <br />
+            <br />
+            I’m drawn to projects that support people and the planet — whether that’s helping students make sense of data, supporting researchers with better tooling, or building experiences that make complexity easier to navigate.
+          </p>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
@@ -99,4 +78,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;

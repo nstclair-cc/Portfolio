@@ -6,7 +6,7 @@ const DSETConferenceModalContent = () => (
     <h3 style={headingStyles.h3}>CODAP v2 Launch & DSET Conference</h3>
     <hr />
     <div style={{ fontWeight: 'bold', color: '#000' }}>Community Building & Conference Planning</div>
-    <div>9 months (2023–2024)</div>
+    <div>9 months (2017-2018)</div>
     <p><em>Led the launch of CODAP v2 and organized the first DSET conference, convening 100+ national leaders in K–12 data science education</em></p>
     <hr />
     <div><strong style={{ fontWeight: 800 }}>Project Role:</strong> Project Manager</div>
