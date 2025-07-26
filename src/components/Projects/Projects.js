@@ -2,12 +2,13 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import tedEd from "../../Assets/Projects/starry-night.png";
+import codap from "../../Assets/Projects/codap.png";
+import mentalCalc from "../../Assets/Projects/mental-calc.png";
+import wbghNgps from "../../Assets/Projects/wbgh-ngps.png";
+import audioTranscriber from "../../Assets/Projects/audio-transcriber.png";
+import straightLine from "../../Assets/Projects/straight-line.png";
+import multiData from "../../Assets/Projects/multi-data.png";
 
 function Projects() {
   return (
@@ -15,7 +16,7 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          Featured <strong className="purple">Projects </strong>
         </h1>
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
@@ -23,68 +24,73 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={wbghNgps}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Next Generation Preschool"
+              description="UX research on tablet-based science tools, using mixed methods to assess usability and interaction design. Identified friction points in hybrid digital-hands-on workflows and delivered actionable design recommendations."
+              driveLink="https://drive.google.com/file/d/0BwPizBG8eJiyb1RFTUVIYzgwaE0/view?usp=sharing&resourcekey=0-aGqxlTCJAuNFCBlmF2D0fA"
+              demoLink="https://drive.google.com/file/d/0BwPizBG8eJiyTlNDd3g4R3NKNWs/view?usp=sharing&resourcekey=0-94YjkFo5wHg7M7eT5x0BQQ"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={multiData}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Navigating Multidimensional Data Structures"
+              description="First author on award-winning ISLS paper examining how data experts reason with unfamiliar multidimensional datasets. Uncovered interaction patterns that inform interface design for exploratory data tools."
+              demoLink="http://dx.doi.org/10.22318/icls2024.613673"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={tedEd}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="TED-Ed"
+              description="Wrote scripts for three TED-Ed videos exploring the mathematics behind art, music, and literature. Translated complex ideas into compelling narratives to enhance conceptual clarity and viewer engagement."
+              demoLink="https://ed.ted.com/lessons/the-unexpected-math-behind-van-gogh-s-starry-night-natalya-st-clair"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={straightLine}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="But is it supposed to be a straight line?"
+              description="Conducted UX research on how users interpret noisy sensor data in exploratory interfaces. Surfaced key breakdowns in data visualization and proposed improvements to support graph literacy and interaction flow."
+              demoLink="https://www.tandfonline.com/doi/epdf/10.1080/09500693.2023.2260064?needAccess=true"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={mentalCalc}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="The Art of Mental Calculation"
+              description="Co-authored and illustrated a math workbook focused on rapid mental calculation. Designed 40+ engaging, accessible visuals to support intuitive understanding and user motivation in self-paced learning."
+              demoLink="https://a.co/d/dEbprVK"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={audioTranscriber}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Audio Transcriber"
+              description="Developed a Python-based transcription toolkit integrating Google Speech API and FasterWhisper. Designed for flexible UX—supports both real-time and offline workflows for accessibility and research use cases."
+              ghLink="https://github.com/concord-consortium/audio-transcriber"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={codap}
+              isBlog={false}
+              title="CODAP"
+              description="Conducted QA and UX research for CODAP, a data analysis tool. Developed Cypress test coverage to ensure interface reliability, and led user studies to drive data-informed UI/UX enhancements."
+              ghLink="https://github.com/concord-consortium/codap"
+              demoLink="https://codap.concord.org/app/static/dg/en/cert/index.html"
             />
           </Col>
         </Row>

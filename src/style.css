@@ -1,21 +1,25 @@
-html {
-  --section-background-color: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
-  );
-
-  --image-gradient: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.678),
-    rgba(12, 10, 22, 0.863)
-  );
-
-  --imp-text-color: #c770f0;
+/* Add gray background to homepage image column (woman-computer.svg) */
+.home-image-col {
+  background: #f5f5f6 !important;
 }
 
+/* Universal override to ensure all backgrounds are white and no background images */
+html, body, #root, #tsparticles {
+  background-color: #fff !important;
+  background-image: none !important;
+}
+
+html {
+  --section-background-color: #fff;
+  --image-gradient: #fff;
+  --imp-text-color: #000;
+  background: #fff;
+  color: #000;
+}
+
+
 .purple {
-  color: var(--imp-text-color) !important;
+  color: #000 !important;
 }
 
 button:focus {
@@ -25,6 +29,7 @@ button:focus {
 /* --------- */
 /*  Preloader */
 /* --------- */
+
 #preloader {
   position: fixed;
   top: 0;
@@ -32,10 +37,11 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #0c0513;
-  background-image: url(./Assets/pre.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: #fff;
+  background-image: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #preloader-none {
@@ -56,37 +62,43 @@ button:focus {
 }
 
 /* Track */
+
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: #eee;
 }
 
 /* Handle */
+
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: #bbb;
   border-radius: 12px;
 }
 
 /* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
+  background: #888;
   border-radius: 12px;
 }
 
 /* --------- */
 /* Navbar Section  */
 /* --------- */
+
 .sticky {
-  background-color: #1b1a2ea9 !important;
+  background-color: #fff !important;
   transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
-  backdrop-filter: blur(15px) !important;
+  box-shadow: 0px 10px 10px 0px #eee !important;
+  backdrop-filter: none !important;
 }
+
 
 .navbar {
   position: fixed !important;
   transition: all 0.3s ease-out 0s !important;
   padding: 0.3rem 2rem !important;
   font-size: 1.2rem !important;
+  background: #fff !important;
 }
 
 .navbar-toggler {
@@ -95,9 +107,10 @@ button:focus {
   border-color: transparent !important;
 }
 
+
 .navbar-toggler span {
   display: block !important;
-  background-color: #be50f4 !important;
+  background-color: #000 !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -144,14 +157,15 @@ button:focus {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
-    background-color: #181a27 !important;
+    background-color: #fff !important;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
   }
 }
+
 .navbar-brand {
-  color: rgb(250, 250, 250) !important;
+  color: #000 !important;
 }
 
 .logo {
@@ -159,8 +173,9 @@ button:focus {
   width: 2.5em !important;
 }
 
+
 .navbar-nav .nav-link {
-  color: white !important;
+  color: #000 !important;
   padding-right: 1rem !important;
   padding-left: 1rem !important;
 }
@@ -187,22 +202,26 @@ button:focus {
   z-index: 1;
 }
 
+
+
 .navbar-nav .nav-item a::after {
   content: "";
   position: relative;
   display: block;
-  height: 5px;
+  height: 4px;
   width: 0;
-  border-radius: 16px;
-  background: #c95bf5;
-  bottom: 1px;
+  border-radius: 2px;
+  background: #000;
+  bottom: 0;
   left: 0;
-  z-index: -1;
-  transition: all 0.3s ease-out 0s;
+  z-index: 1;
+  transition: width 0.3s ease-out 0s, background 0.3s;
 }
+
 
 .navbar-nav .nav-item a:hover::after {
   width: 100%;
+  background: #000;
 }
 
 /* --------- */
@@ -243,55 +262,69 @@ button:focus {
   }
 }
 #tsparticles {
-  position: fixed !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  width: 100%;
-  height: 100%;
+  background-color: #fff !important;
+  background-image: none !important;
+  z-index: -9999 !important;
 }
+
 
 .home-header {
   padding-top: 80px !important;
+  background: #f5f5f6 !important;
+  background-image: none !important;
 }
+
+
 
 .home-section {
   position: relative;
-  z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
-  background-position: top center;
-  background-repeat: no-repeat;
+  background: #f5f5f6 !important;
+  background-image: none !important;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
 }
 
+
+  
 .home-content {
   padding: 9rem 0 2rem !important;
-  color: whitesmoke;
+  color: #000;
   text-align: left;
+  background: #f5f5f6 !important;
 }
+/* Force all .container backgrounds to white for homepage */
+.container, .container-fluid {
+  background: #fff !important;
+}
+
 
 .heading {
   font-size: 2.4em !important;
   padding-left: 50px !important;
+  color: #000 !important;
 }
+
 
 .heading-name {
   font-size: 2.5em !important;
   padding-left: 45px !important;
+  color: #000 !important;
 }
 
+
 .main-name {
-  color: #cd5ff8;
+  color: #000;
 }
+
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: #be6adf !important;
+  color: #000 !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #b562d6 !important;
+  color: #000 !important;
 }
 
 @media (max-width: 767px) {
@@ -308,6 +341,7 @@ button:focus {
 .myAvtar {
   justify-content: center !important;
   padding-top: 9em !important;
+  background: #f5f5f6 !important;
 }
 
 @media (max-width: 767px) {
@@ -321,13 +355,17 @@ button:focus {
   position: relative;
   padding-bottom: 70px !important;
   padding-top: 70px !important;
+  background: #fff !important;
+  background-image: none !important;
 }
 
+
 .home-about-description {
-  color: white !important;
+  color: #000 !important;
   padding-top: 100px !important;
   padding-bottom: 20px !important;
   text-align: center;
+  background: #f5f5f6 !important;
 }
 
 .home-about-body {
@@ -336,10 +374,11 @@ button:focus {
   text-align: left;
 }
 
+
 .home-about-social {
   text-align: center !important;
   padding-top: 25px;
-  color: white !important;
+  color: #000 !important;
 }
 
 .home-about-social-links {
@@ -350,6 +389,7 @@ button:focus {
   padding-inline-start: 0 !important;
 }
 
+
 .home-social-icons {
   position: relative !important;
   display: inline-block !important;
@@ -358,9 +398,10 @@ button:focus {
   text-align: center !important;
   font-size: 1.2em !important;
   line-height: 2em !important;
-  background: rgba(255, 255, 255, 0.972) !important;
+  background: #fff !important;
   border-radius: 50% !important;
   transition: 0.5s !important;
+  color: #000 !important;
 }
 
 .home-social-icons::before {
@@ -371,7 +412,7 @@ button:focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #68187a;
+  background: #fff;
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -379,13 +420,13 @@ button:focus {
 
 .home-social-icons:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #801f95;
+  box-shadow: 0 0 15px #000;
 }
 
 .home-social-icons:hover {
-  color: #87209e;
-  box-shadow: 0 0 5px #87209e;
-  text-shadow: 0 0 2px #87209e;
+  color: #000;
+  box-shadow: 0 0 5px #000;
+  text-shadow: 0 0 2px #000;
 }
 
 .social-icons {
@@ -394,15 +435,18 @@ button:focus {
   padding-left: 15px;
 }
 
+
 .icon-colour {
-  color: #700c86 !important;
+  color: #000 !important;
 }
 
 /* --------- */
 /* Footer */
 /* --------- */
+
 .footer {
-  background-color: rgb(10, 4, 22);
+  background-color: #fff;
+  color: #000 !important;
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
@@ -426,9 +470,10 @@ button:focus {
   }
 }
 
+
 .footer h3 {
   font-size: 1em;
-  color: white !important;
+  color: #000 !important;
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
 }
@@ -438,17 +483,19 @@ button:focus {
   padding: 0 !important;
 }
 
+
 .blockquote-footer {
-  color: #a588c0 !important;
+  color: #000 !important;
 }
 /* --------- */
 /* Projects */
 /* --------- */
+
 .project-section {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+  background: #fff !important;
 }
 
 .project-card {
@@ -459,9 +506,10 @@ button:focus {
   height: auto !important;
 }
 
+
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
-  color: white !important;
+  box-shadow: 0 4px 5px 3px #eee !important;
+  color: #000 !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
   transition: all 0.5s ease 0s !important;
@@ -470,7 +518,7 @@ button:focus {
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+  box-shadow: 0 4px 4px 5px #bbb !important;
 }
 
 .blog-card {
@@ -481,16 +529,18 @@ button:focus {
   height: auto !important;
 }
 
+
 .blog-card-view {
   background-color: transparent !important;
-  box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
-  color: white !important;
+  box-shadow: 0 3px 3px 2px #eee !important;
+  color: #000 !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
 }
 
+
 .blog-link {
-  color: white !important;
+  color: #000 !important;
   text-decoration: none !important;
 }
 
@@ -498,10 +548,11 @@ button:focus {
   cursor: pointer !important;
 }
 
+
 .blog-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65) !important;
+  box-shadow: 0 3px 3px 5px #bbb !important;
 }
 
 .card-img-top {
@@ -516,23 +567,25 @@ button:focus {
   border-radius: 0px !important;
 }
 
+
 .btn-primary {
   color: #fff !important;
-  background-color: #623686 !important;
-  border-color: #623686 !important;
+  background-color: #000 !important;
+  border-color: #000 !important;
 }
 
 .btn-primary:hover {
   color: #fff !important;
-  background-color: #6d20c5d7 !important;
-  border-color: #6d20c5d7 !important;
+  background-color: #333 !important;
+  border-color: #333 !important;
 }
 .btn:focus {
   outline: none !important;
   box-shadow: none !important;
 }
+
 .project-heading {
-  color: white !important;
+  color: #000 !important;
   font-size: 2.3em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;
@@ -542,25 +595,27 @@ button:focus {
 /* About */
 /* --------- */
 
+
 .about-section {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
-  color: white !important;
+  background: #fff !important;
+  color: #000 !important;
 }
+
 
 .tech-icons {
   font-size: 4.5em !important;
   margin: 15px !important;
   padding: 10px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  border: 1.7px solid #000 !important;
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 5px !important;
   display: table !important;
-  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  box-shadow: 4px 5px 4px 3px #eee !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
 }
@@ -581,9 +636,10 @@ button:focus {
   line-height: 1.6 !important;
 }
 
+
 .quote-card-view {
   border: none !important;
-  color: white !important;
+  color: #000 !important;
   background-color: transparent !important;
 }
 
@@ -602,12 +658,13 @@ button:focus {
 /* Resume */
 /* --------- */
 
+
 .resume-section {
   position: relative !important;
   padding-top: 110px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
-  color: white !important;
+  background: #f5f5f6 !important;
+  color: #000 !important;
 }
 
 .resume {
@@ -642,17 +699,19 @@ button:focus {
   padding-bottom: 30px;
 }
 
+
 .resume .resume-item {
   padding: 0 0 10px 25px;
   margin-top: -2px;
-  border-left: 2px solid #8a49a8;
+  border-left: 2px solid #000;
   position: relative;
 }
+
 
 .resume .resume-item .resume-title {
   line-height: 18px;
   font-size: 0.9em;
-  background: #5234795d;
+  background: #eee;
   padding: 8px 15px;
   display: inline-block;
   font-weight: 600;
@@ -673,6 +732,7 @@ button:focus {
   padding-bottom: 0;
 }
 
+
 .resume .resume-item::before {
   content: "";
   position: absolute;
@@ -682,7 +742,7 @@ button:focus {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #8a49a8;
+  border: 2px solid #000;
 }
 
 .like-item {
@@ -691,9 +751,11 @@ button:focus {
   font-family: sans-serif !important;
 }
 
+
 .like-btn {
-  background-color: #934cce5e !important;
-  border-color: #934cce5e !important;
+  background-color: #000 !important;
+  border-color: #000 !important;
+  color: #fff !important;
   padding: 0.25rem 0.98rem !important;
   border-radius: 5px !important;
   line-height: 1.4 !important;
@@ -702,8 +764,8 @@ button:focus {
 
 .like-btn:hover {
   transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
+  background-color: #333 !important;
+  border-color: #333 !important;
 }
 
 .animate-like {
@@ -725,9 +787,11 @@ button:focus {
   padding-top: 10px !important;
 }
 
+
 .fork-btn-inner {
   line-height: 1.4em !important;
-  background-color: #934cce5e !important;
+  background-color: #000 !important;
+  color: #fff !important;
   padding: 0.25rem 1.1rem !important;
   vertical-align: middle !important;
   text-align: center !important;
@@ -735,9 +799,10 @@ button:focus {
 
 .fork-btn-inner:hover {
   transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
+  background-color: #333 !important;
+  border-color: #333 !important;
 }
 .fork-btn-inner::after {
   display: none !important;
 }
+
