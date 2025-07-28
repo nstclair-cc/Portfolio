@@ -28,6 +28,69 @@ import codap from "../../Assets/Projects/codap.png";
 // ...existing code...
 const projects = [
   {
+    imgPath: straightLine,
+    isBlog: false,
+    title: "But is it supposed to be a straight line?",
+    description:
+      "Conducted UX research on how users interpret noisy sensor data in exploratory interfaces. Surfaced key breakdowns in data visualization and proposed improvements to support graph literacy and interaction flow.",
+    demoLink: "http://dx.doi.org/10.1080/09500693.2023.2260064",
+    modalContent: <StraightLine />, 
+  },
+  {
+    imgPath: multiData,
+    isBlog: false,
+    title: "Navigating Multidimensional Data Structures",
+    description:
+      "First author on award-winning ISLS paper examining how data experts reason with unfamiliar multidimensional datasets. Uncovered interaction patterns that inform interface design for exploratory data tools.",
+    demoLink: "https://doi.org/10.22318/icls2024.613673",
+    modalContent: <MultiDataModalContent />, 
+  },
+  {
+    imgPath: starryNight,
+    isBlog: false,
+    title: "TED-Ed",
+    description:
+      "Wrote scripts for three TED-Ed videos exploring the mathematics behind art, music, and literature. Translated complex ideas into compelling narratives to enhance conceptual clarity and viewer engagement.",
+    demoLink: "https://ed.ted.com/lessons/the-unexpected-math-behind-van-gogh-s-starry-night-natalya-st-clair",
+    modalContent: <TEDEdLesson />, 
+  },
+  {
+    imgPath: codap,
+    isBlog: false,
+    title: "CODAP automation",
+    description:
+      "Worked on QA and UX research for CODAP, an open-source data analysis platform used in education. I built automated Cypress tests to ensure interface reliability and led user research efforts to improve the tool’s usability based on real classroom feedback.",
+    ghLink: "https://github.com/concord-consortium/codap/tree/main/v3/cypress/e2e/pixi-interaction",
+    modalContent: <AutomationPixiJS />, 
+  },
+  {
+    imgPath: audioTranscriber,
+    isBlog: false,
+    title: "Audio Transcriber",
+    description:
+      "Developed a Python-based transcription toolkit integrating Google Speech API and FasterWhisper. Designed for flexible UX—supports both real-time and offline workflows for accessibility and research use cases.",
+    ghLink: "https://github.com/concord-consortium/audio-transcriber",
+    modalContent: <AudioTranscriber />, 
+  },
+  {
+    imgPath: mentalCalc,
+    isBlog: false,
+    title: "The Art of Mental Calculation",
+    description:
+      "Co-authored and illustrated a math workbook focused on rapid mental calculation. Designed 40+ engaging, accessible visuals to support intuitive understanding and user motivation in self-paced learning.",
+    demoLink: "https://www.amazon.com/dp/1495219968",
+    modalContent: <ArtOfMentalCalc />, 
+  },
+  {
+    imgPath: codap,
+    isBlog: false,
+    title: "CODAP v2 Launch & DSET Conference",
+    description:
+      "Led the launch of CODAP v2 and organized the inaugural DSET conference, bringing together 100+ leaders in data science education to spark collaboration and showcase open-source tools in the K–12 space.",
+    demoLink: "https://codap.concord.org/dset/index.html",
+    modalContent: <DSETConferenceModalContent />,
+  },
+  {
     imgPath: wbghNgps,
     isBlog: false,
     title: "Next Generation Preschool",
@@ -39,70 +102,6 @@ const projects = [
       "https://drive.google.com/file/d/0BwPizBG8eJiyTlNDd3g4R3NKNWs/view?usp=sharing&resourcekey=0-94YjkFo5wHg7M7eT5x0BQQ",
     modalContent: <NextGenerationPreschoolModalContent />, 
   },
-  // ...rest of the projects array...
-  {
-    imgPath: codap,
-    isBlog: false,
-    title: "CODAP automation",
-    description:
-      "Worked on QA and UX research for CODAP, an open-source data analysis platform used in education. I built automated Cypress tests to ensure interface reliability and led user research efforts to improve the tool’s usability based on real classroom feedback.",
-    ghLink: "https://github.com/concord-consortium/codap/tree/main/v3/cypress/e2e/pixi-interaction",
-    modalContent: <AutomationPixiJS />,
-  },
-  {
-    imgPath: audioTranscriber,
-    isBlog: false,
-    title: "Audio Transcriber",
-    description:
-      "Developed a Python-based transcription toolkit integrating Google Speech API and FasterWhisper. Designed for flexible UX—supports both real-time and offline workflows for accessibility and research use cases.",
-    ghLink: "https://github.com/concord-consortium/audio-transcriber",
-    modalContent: <AudioTranscriber />,
-  },
-  {
-    imgPath: straightLine,
-    isBlog: false,
-    title: "But is it supposed to be a straight line?",
-    description:
-      "Conducted UX research on how users interpret noisy sensor data in exploratory interfaces. Surfaced key breakdowns in data visualization and proposed improvements to support graph literacy and interaction flow.",
-    demoLink: "http://dx.doi.org/10.1080/09500693.2023.2260064",
-    modalContent: <StraightLine />,
-  },
-  {
-    imgPath: starryNight,
-    isBlog: false,
-    title: "TED-Ed",
-    description:
-      "Wrote scripts for three TED-Ed videos exploring the mathematics behind art, music, and literature. Translated complex ideas into compelling narratives to enhance conceptual clarity and viewer engagement.",
-    demoLink: "https://ed.ted.com/lessons/the-unexpected-math-behind-van-gogh-s-starry-night-natalya-st-clair",
-    modalContent: <TEDEdLesson />,
-  },
-  {
-    imgPath: mentalCalc,
-    isBlog: false,
-    title: "The Art of Mental Calculation",
-    description:
-      "Co-authored and illustrated a math workbook focused on rapid mental calculation. Designed 40+ engaging, accessible visuals to support intuitive understanding and user motivation in self-paced learning.",
-    demoLink: "https://www.amazon.com/dp/1495219968",
-    modalContent: <ArtOfMentalCalc />,
-  },
-  {
-    imgPath: multiData,
-    isBlog: false,
-    title: "Navigating Multidimensional Data Structures",
-    description:
-      "First author on award-winning ISLS paper examining how data experts reason with unfamiliar multidimensional datasets. Uncovered interaction patterns that inform interface design for exploratory data tools.",
-    demoLink: "https://doi.org/10.22318/icls2024.613673",
-    modalContent: <MultiDataModalContent />,
-  },
-  {
-  imgPath: codap,
-  isBlog: false,
-  title: "CODAP v2 Launch & DSET Conference",
-  description:
-    "Led the launch of CODAP v2 and organized the inaugural DSET conference, bringing together 100+ leaders in data science education to spark collaboration and showcase open-source tools in the K–12 space.",
-  demoLink: "https://codap.concord.org/dset/index.html",
-  modalContent: <DSETConferenceModalContent />,
-}
 ];
 
 function Projects() {
@@ -131,7 +130,7 @@ function Projects() {
           </p>
           <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
             {projects.map((project, idx) => (
-              <Col md={4} className="project-card" key={project.title}>
+              <Col md={4} className="project-card" key={project.title + '-' + idx}>
                 <ProjectCard
                   {...project}
                   renderImage={() => (
@@ -156,6 +155,8 @@ function Projects() {
                       {project.title}
                     </h2>
                   )}
+                  // Pass open-in-modal handler as a prop for button row
+                  onOpenModal={() => handleProjectClick(project)}
                 />
               </Col>
             ))}
@@ -192,8 +193,8 @@ function Projects() {
                   animation: "modalUp 0.4s cubic-bezier(.4,1.6,.6,1)",
                   maxHeight: "90vh",
                   overflowY: "auto",
-                  // Add extra right padding for readability
-                  paddingRight: 120,
+                  // Reduce right padding for desktop, and minimize on mobile
+                  paddingRight: 40,
                 }}
                 onClick={e => e.stopPropagation()}
               >
@@ -203,7 +204,7 @@ function Projects() {
                     position: "absolute",
                     top: 24,
                     right: 32,
-                    background: "#f5f5f6",
+                    background: "transparent",
                     border: "none",
                     fontSize: 32,
                     cursor: "pointer",
@@ -218,18 +219,7 @@ function Projects() {
                 >
                   <IoMdClose />
                 </button>
-                {/* White gradient overlay for right side readability */}
-                <div style={{
-                  pointerEvents: 'none',
-                  position: 'absolute',
-                  top: 0,
-                  right: 0,
-                  width: 140,
-                  height: '100%',
-                  background: '#f5f5f6',
-                  zIndex: 15,
-                  borderRadius: '0 18px 18px 0'
-                }} />
+                {/* Removed white gradient overlay for right side readability */}
                 <img
                   src={selectedProject.imgPath}
                   alt={selectedProject.title ? selectedProject.title : "Project image"}
@@ -281,11 +271,10 @@ function Projects() {
                   100% { transform: translateY(0) scale(1); opacity: 1; }
                 }
                 @media (max-width: 767px) {
-                  .modal-content-custom {
-                    width: 100vw !important;
-                    min-width: 0 !important;
-                    border-radius: 0 !important;
-                    padding: 12px !important;
+                  /* Target the modal content wrapper directly for mobile */
+                  .project-section > div[style*='position: fixed'] > div[style] {
+                    padding-right: 8px !important;
+                    padding-left: 8px !important;
                   }
                 }
               `}</style>
