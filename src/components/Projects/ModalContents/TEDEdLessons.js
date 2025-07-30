@@ -17,21 +17,15 @@ const MathematicsAndArtModalContent = () => (
 
     <h4 style={headingStyles.h4}>Project Overview</h4>
     <p>
-      This project began with a simple challenge: create a TED-Ed lesson that illuminates the connection between math and art. Working closely with TED-Ed producers, we quickly realized there was more than one story worth telling. The project grew into a three-part animated series exploring math through the lenses of visual art, music, and performing arts.
+    I wrote and co-developed three TED-Ed animated lessons on how math shows up in unexpected places—art, music, and literature. One of these videos, on Van Gogh’s <em>Starry Night</em>, was later named <a href="http://blog.ed.ted.com/2015/10/09/top-5-ted-ed-lessons-of-all-time/" target="_blank" rel="noreferrer"><strong>“Best TED-Ed Lesson of All Time”</strong></a> and has received <strong>over 9 million views</strong> on YouTube.
     </p>
     <p>
-      I wrote and co-developed all three scripts, collaborating with editors, producers, animators, and fact-checkers across multiple time zones. From Van Gogh’s swirling skies to Shakespearean authorship, each story uncovered surprising ways that mathematical thinking shapes the arts — and the way we understand the world.
+    Collaborating with editors, producers, animators, and fact-checkers across time zones, I turned abstract math concepts into clear, engaging scripts supported by visual references. From sinusoidal sound waves to Shakespearean authorship debates, each video was designed to spark curiosity and make math feel relevant to a global student audience.
     </p>
-
-    <h4 style={headingStyles.h4}>Problem Statement</h4>
-    <ul>
-      <li>How can we use storytelling to spark curiosity about mathematics — especially in creative disciplines where it’s least expected?</li>
-      <li>What’s the right balance of narrative, technical rigor, and visual clarity for a global student audience?</li>
-    </ul>
 
     <h4 style={headingStyles.h4}>The Solution</h4>
     <p>
-      I crafted three stories at the intersection of mathematics and art:
+    I developed three narrative-driven math lessons that connected big ideas in the arts to core mathematical concepts:
     </p>
     <ul>
       <li><a href="https://ed.ted.com/lessons/the-unexpected-math-behind-van-gogh-s-starry-night-natalya-st-clair" target="_blank" rel="noreferrer">The Unexpected Math Behind Van Gogh’s Starry Night</a> — visual art & turbulence</li>
@@ -39,15 +33,12 @@ const MathematicsAndArtModalContent = () => (
       <li><a href="https://ed.ted.com/lessons/did-shakespeare-write-his-plays-natalya-st-clair-and-aaron-williams" target="_blank" rel="noreferrer">Did Shakespeare Write His Plays?</a> — authorship attribution & frequency analysis</li>
     </ul>
     <p>
-      These lessons combined research with creative pedagogy, each paired with animations to help global audiences see and feel the math embedded in the arts.
+    Each script was paired with animation-ready visual diagrams to bring the math to life and ensure clarity for a student audience worldwide.
     </p>
 
     <h4 style={headingStyles.h4}>Aligning Goals</h4>
     <p>
-      The initial goal was a single lesson — but after brainstorming with TED-Ed producers, we expanded the scope to three domains of artistic expression. It was a collaborative, cross-disciplinary effort with editorial, animation, and production teams all over the world.
-    </p>
-    <p>
-      One of the biggest wins was learning to adapt creative mathematical ideas for an international student audience — and doing it in a way that was clear, joyful, and visually rich.
+    This project started as a single script, but after early conversations with TED-Ed producers, we expanded it into a three-part series. I learned to adapt complex mathematical ideas into joyful, globally accessible lessons—while navigating the real-world logistics of animation, editorial feedback, and asynchronous production cycles.
     </p>
 
     <h4 style={headingStyles.h4}>Discover</h4>
@@ -74,7 +65,7 @@ const MathematicsAndArtModalContent = () => (
     <h4 style={headingStyles.h4}>Deliver</h4>
     <ul>
       <li><strong>9M+ views</strong> on the Van Gogh video alone</li>
-      <li>Named <strong>“Best TED-Ed Lesson of All Time”</strong> in 2018</li>
+      <li>Named <strong>“Best TED-Ed Lesson of All Time”</strong> in 2015</li>
       <li>Project inspired further interdisciplinary math-art curriculum work</li>
       <li>Learned the joy (and challenge) of writing educational content for global learners</li>
       <li>Grateful to collaborate with TED-Ed visionaries like Logan Smalley and Alex Gendler</li>
