@@ -30,6 +30,7 @@ export const projects = [
     {
     imgPath: starryNight,
     isBlog: false,
+    bannerText: "Top TED-Ed Lesson",
     title: "TED-Ed",
     description:
       "Many students see math as disconnected from creativity. I wrote scripts for three TED-Ed videos that reveal its role in art, music, and literature, crafting clear, engaging stories that make abstract ideas feel intuitive.",
@@ -46,9 +47,20 @@ export const projects = [
     modalContent: <StraightLine />, 
   },
   {
+    imgPath: mentalCalc,
+    isBlog: false,
+    bannerText: "NYT Bestselling Books",
+    title: "The Art of Mental Calculation",
+    description:
+      "I illustrated two New York Times bestselling books that make mental math more visual and approachable. Using playful diagrams and clear layouts, I helped turn Dr. Benjamin’s techniques into an intuitive and fun learning experience.",
+    demoLink: "https://www.amazon.com/dp/1495219968",
+    modalContent: <ArtOfMentalCalc />, 
+  },
+  {
     imgPath: multiData,
     isBlog: false,
     title: "Navigating Multidimensional Data Structures",
+    bannerText: "Best Long Paper Award",
     description:
       "As first author on an award-winning study, I examined how data experts explore unfamiliar datasets. We identified hands-on strategies that can guide the design of tools to help students make sense of complex data.",
     demoLink: "https://doi.org/10.22318/icls2024.613673",
@@ -68,18 +80,9 @@ export const projects = [
     isBlog: false,
     title: "Audio Transcriber",
     description:
-      "Researchers needed a way to transcribe large volumes of classroom video without sending sensitive data to the cloud. I built a Python toolkit that supports both real-time and offline transcription for secure, flexible use.",
+      "To meet strict student privacy requirements, I built a Python toolkit for transcribing classroom video without sending data to the cloud. The tool supports real-time and offline use, making secure, scalable transcription possible for research teams.",
     ghLink: "https://github.com/concord-consortium/audio-transcriber",
     modalContent: <AudioTranscriber />, 
-  },
-  {
-    imgPath: mentalCalc,
-    isBlog: false,
-    title: "The Art of Mental Calculation",
-    description:
-      "Many students struggle with mental math because it feels abstract and intimidating. I co-authored and illustrated a workbook that uses playful visuals and clear design to make Dr. Benjamin’s techniques feel intuitive and fun to learn.",
-    demoLink: "https://www.amazon.com/dp/1495219968",
-    modalContent: <ArtOfMentalCalc />, 
   },
   {
     imgPath: codap,

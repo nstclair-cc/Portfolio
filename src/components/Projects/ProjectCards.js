@@ -31,53 +31,31 @@ function ProjectCards(props) {
           className="project-card-banner"
           style={{
             position: 'absolute',
-            top: 0,
-            left: '-10px',
-            width: 'calc(100% + 20px)',
+            top: 14,
+            left: 0,
+            width: '100%',
             zIndex: 2,
-            height: 40,
+            height: 44,
             background: props.bannerColor || '#EDBA19',
             color: '#fff',
             fontWeight: 700,
-            fontSize: 16,
+            fontSize: 18,
             textAlign: 'center',
-            lineHeight: '40px',
+            lineHeight: '44px',
             margin: 0,
             boxShadow: '0 2px 8px rgba(0,0,0,0.10)',
             letterSpacing: 1,
             textShadow: '0 1px 2px rgba(0,0,0,0.10)',
-            borderRadius: '8px 8px 0 0',
-            pointerEvents: 'none',
             userSelect: 'none',
             overflow: 'visible',
-            display: 'block',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            pointerEvents: 'none',
+            clipPath: 'polygon(100% 0, 95% 50%, 100% 100%, 0% 100%, 0% 0%)',
           }}
         >
           {props.bannerText}
-          {/* Ribbon triangle left */}
-          <span style={{
-            position: 'absolute',
-            left: 0,
-            bottom: -10,
-            width: 0,
-            height: 0,
-            borderTop: '10px solid #cd8d11',
-            borderLeft: '10px solid transparent',
-            content: '""',
-            display: 'block',
-          }} />
-          {/* Ribbon triangle right */}
-          <span style={{
-            position: 'absolute',
-            right: 0,
-            bottom: -10,
-            width: 0,
-            height: 0,
-            borderTop: '10px solid #cd8d11',
-            borderRight: '10px solid transparent',
-            content: '""',
-            display: 'block',
-          }} />
         </div>
       )}
       {/* Use custom renderImage if provided, else default */}
