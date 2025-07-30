@@ -4,15 +4,10 @@
 </h2>
 <br/>
 
-<center>
-
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) &nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) &nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) &nbsp;
-![GitHub Repo stars](https://img.shields.io/github/stars/soumyajit4419/Portfolio?color=red&logo=github&style=for-the-badge) &nbsp;
-![GitHub forks](https://img.shields.io/github/forks/soumyajit4419/Portfolio?color=red&logo=github&style=for-the-badge)
-
-</center>
+<p align="center">
+  <img src="src/Assets/avatar.svg" alt="Natalya Avatar" height="120" style="border-radius:50%;margin:8px;" />
+  <img src="src/Assets/logo-Nc.png" alt="NC Logo" height="80" style="margin:8px;" />
+</p>
 
 <h3 align="center">
     🔹
@@ -24,7 +19,7 @@
 ## TL;DR
 
 
-You can fork this repo to modify and make changes of your own. This version was significantly revised and restyled by [Natalya St. Clair](https://github.com/nstclair-cc), based on the original by [Soumyajit4419](https://github.com/soumyajit4419/Portfolio). Please credit both if you use this code. Thanks!
+You can fork this repo to modify and make changes of your own. This version was revised and restyled by [Natalya St. Clair](https://github.com/nstclair-cc), based on the original by [Soumyajit4419](https://github.com/soumyajit4419/Portfolio). Please credit both if you use this code. Thanks!
 
 ## Built With
 
