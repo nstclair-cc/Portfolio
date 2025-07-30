@@ -17,20 +17,18 @@ const MultiDataModalContent = () => (
     <hr />
     <h4 style={headingStyles.h4}>Project Overview</h4>
     <p>
-      This exploratory study aimed to understand how experienced data practitioners navigate and interpret unfamiliar multidimensional datasets. Our research team conducted a series of semi-structured think-aloud interviews with ten data experts across diverse sectors to explore how they reason about structure, hierarchy, and usability in complex datasets.
+    As first author, I helped carry out a study of how data experts approach unfamiliar multidimensional datasets. I conducted interviews, analyzed transcripts, and led the writing of the final paper. The study design was developed in collaboration with two senior scientists, who guided the early framing and protocol.
     </p>
     <p>
-      I served as first author and researcher with two senior scientists, managing the interview process, analyzing transcripts, and presenting our findings at the 2023 International Society of the Learning Sciences (ISLS) conference, where our paper received an outstanding paper award.
+    Together, we uncovered expert strategies for structuring complex data—insights that later shaped both student-facing research and interface design in CODAP. Our paper received an Outstanding Paper Award at the 2023 International Society of the Learning Sciences (ISLS) conference.
     </p>
 
     <h4 style={headingStyles.h4}>Problem Statement</h4>
-    <p>
-      <ul>
-        <li>How do data experts from various fields approach unfamiliar multidimensional datasets?</li>
-        <li>What interaction patterns emerge when they create, manipulate, and structure data tables?</li>
-        <li>What patterns emerge in how they create, manipulate, and structure data tables, and how can these insights inform design improvements for students learning to analyze data in digital tools like CODAP?</li>
-      </ul> 
-    </p>
+    <ul>
+      <li>How do data experts from various fields approach unfamiliar multidimensional datasets?</li>
+      <li>What interaction patterns emerge when they create, manipulate, and structure data tables?</li>
+      <li>What patterns emerge in how they create, manipulate, and structure data tables, and how can these insights inform design improvements for students learning to analyze data in digital tools like CODAP?</li>
+    </ul>
 
     <h4 style={headingStyles.h4}>The Solution</h4>
     <p>
@@ -47,10 +45,10 @@ const MultiDataModalContent = () => (
 
     <h4 style={headingStyles.h4}>Aligning Goals</h4>
     <p>
-      This project was a key turning point in my research practice. I learned to facilitate and analyze expert interviews, surface rich qualitative insights, and work cross-functionally with senior researchers to translate those insights into product and research decisions.
+    This project helped me grow as a researcher: I learned how to design and facilitate expert interviews, distill complex workflows into actionable insights, and collaborate across roles to influence both product and research directions.
     </p>
     <p>
-      The project also demonstrated how careful attention to expert workflows could shape student-centered design and evaluation. This work laid the foundation for more iterative, research-informed design practices within our data education tools.
+    It also deepened my belief that studying expert behavior—often overlooked in education research—can powerfully inform how we design tools for learners. This work laid the groundwork for more iterative, insight-driven design cycles within our team.
     </p>
 
     <h4 style={headingStyles.h4}>Discover</h4>

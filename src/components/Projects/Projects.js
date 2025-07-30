@@ -26,13 +26,22 @@ import codap from "../../Assets/Projects/codap.png";
 // Import modal content components
 
 // ...existing code...
-const projects = [
+export const projects = [
+    {
+    imgPath: starryNight,
+    isBlog: false,
+    title: "TED-Ed",
+    description:
+      "Many students see math as disconnected from creativity. I wrote scripts for three TED-Ed videos that reveal its role in art, music, and literature, crafting clear, engaging stories that make abstract ideas feel intuitive.",
+    demoLink: "https://ed.ted.com/lessons/the-unexpected-math-behind-van-gogh-s-starry-night-natalya-st-clair",
+    modalContent: <TEDEdLesson />, 
+  },
   {
     imgPath: straightLine,
     isBlog: false,
     title: "But is it supposed to be a straight line?",
     description:
-      "Conducted UX research on how users interpret noisy sensor data in exploratory interfaces. Surfaced key breakdowns in data visualization and proposed improvements to support graph literacy and interaction flow.",
+      "Students using classroom sensor tools often struggled to interpret noisy graph data. I led UX research to uncover where interactions broke down and proposed design changes to support graph literacy and smoother analysis.",
     demoLink: "http://dx.doi.org/10.1080/09500693.2023.2260064",
     modalContent: <StraightLine />, 
   },
@@ -41,25 +50,16 @@ const projects = [
     isBlog: false,
     title: "Navigating Multidimensional Data Structures",
     description:
-      "First author on award-winning ISLS paper examining how data experts reason with unfamiliar multidimensional datasets. Uncovered interaction patterns that inform interface design for exploratory data tools.",
+      "As first author on an award-winning study, I examined how data experts explore unfamiliar datasets. We identified hands-on strategies that can guide the design of tools to help students make sense of complex data.",
     demoLink: "https://doi.org/10.22318/icls2024.613673",
     modalContent: <MultiDataModalContent />, 
-  },
-  {
-    imgPath: starryNight,
-    isBlog: false,
-    title: "TED-Ed",
-    description:
-      "Wrote scripts for three TED-Ed videos exploring the mathematics behind art, music, and literature. Translated complex ideas into compelling narratives to enhance conceptual clarity and viewer engagement.",
-    demoLink: "https://ed.ted.com/lessons/the-unexpected-math-behind-van-gogh-s-starry-night-natalya-st-clair",
-    modalContent: <TEDEdLesson />, 
   },
   {
     imgPath: codap,
     isBlog: false,
     title: "CODAP automation",
     description:
-      "Worked on QA and UX research for CODAP, an open-source data analysis platform used in education. I built automated Cypress tests to ensure interface reliability and led user research efforts to improve the tool’s usability based on real classroom feedback.",
+      "Graph features in a classroom data tool were time-consuming to test manually due to custom rendering. I automated testing with Cypress by exposing hidden graph data, and also led usability research based on feedback from real classrooms.",
     ghLink: "https://github.com/concord-consortium/codap/tree/main/v3/cypress/e2e/pixi-interaction",
     modalContent: <AutomationPixiJS />, 
   },
@@ -68,7 +68,7 @@ const projects = [
     isBlog: false,
     title: "Audio Transcriber",
     description:
-      "Developed a Python-based transcription toolkit integrating Google Speech API and FasterWhisper. Designed for flexible UX—supports both real-time and offline workflows for accessibility and research use cases.",
+      "Researchers needed a way to transcribe large volumes of classroom video without sending sensitive data to the cloud. I built a Python toolkit that supports both real-time and offline transcription for secure, flexible use.",
     ghLink: "https://github.com/concord-consortium/audio-transcriber",
     modalContent: <AudioTranscriber />, 
   },
@@ -77,7 +77,7 @@ const projects = [
     isBlog: false,
     title: "The Art of Mental Calculation",
     description:
-      "Co-authored and illustrated a math workbook focused on rapid mental calculation. Designed 40+ engaging, accessible visuals to support intuitive understanding and user motivation in self-paced learning.",
+      "Many students struggle with mental math because it feels abstract and intimidating. I co-authored and illustrated a workbook that uses playful visuals and clear design to make Dr. Benjamin’s techniques feel intuitive and fun to learn.",
     demoLink: "https://www.amazon.com/dp/1495219968",
     modalContent: <ArtOfMentalCalc />, 
   },
@@ -86,7 +86,7 @@ const projects = [
     isBlog: false,
     title: "CODAP v2 Launch & DSET Conference",
     description:
-      "Led the launch of CODAP v2 and organized the inaugural DSET conference, bringing together 100+ leaders in data science education to spark collaboration and showcase open-source tools in the K–12 space.",
+      "As CODAP v2 neared release, the team needed to build community momentum around data science education. I led the product launch and organized a conference for 100+ educators and developers to share tools and collaborate in person.",
     demoLink: "https://codap.concord.org/dset/index.html",
     modalContent: <DSETConferenceModalContent />,
   },
@@ -95,7 +95,7 @@ const projects = [
     isBlog: false,
     title: "Next Generation Preschool",
     description:
-      "UX research on tablet-based science tools, using mixed methods to assess usability and interaction design. Identified friction points in hybrid digital-hands-on workflows and delivered actionable design recommendations.",
+      "Teachers using tablet-based tools for preschool science needed better support for hands-on, cross-media learning. I ran mixed-methods UX research to uncover workflow challenges and shared design recommendations to improve usability.",
     driveLink:
       "https://drive.google.com/file/d/0BwPizBG8eJiyb1RFTUVIYzgwaE0/view?usp=sharing&resourcekey=0-aGqxlTCJAuNFCBlmF2D0fA",
     demoLink:
@@ -164,6 +164,7 @@ function Projects() {
           {/* Modal overlay for project details */}
           {selectedProject && (
             <div
+              className="modal-overlay"
               style={{
                 position: "fixed",
                 top: 0,
@@ -181,49 +182,49 @@ function Projects() {
             >
               {/* Modal content wrapper */}
               <div
+                className="modal-content-scroll modal-content-outer"
                 style={{
                   background: "#f5f5f6",
                   padding: 32,
                   borderRadius: 18,
-                  width: "75vw",
-                  maxWidth: 1200,
+                  width: "90vw",
+                  maxWidth: 1600,
                   minWidth: 320,
                   boxShadow: "0 2px 32px rgba(0,0,0,0.18)",
                   position: "relative",
                   animation: "modalUp 0.4s cubic-bezier(.4,1.6,.6,1)",
                   maxHeight: "90vh",
                   overflowY: "auto",
-                  // Reduce right padding for desktop, and minimize on mobile
-                  paddingRight: 40,
+                  paddingRight: 80,
                 }}
                 onClick={e => e.stopPropagation()}
               >
                 {/* Fixed close button inside modal, using absolute positioning relative to modal */}
-                <button
-                  style={{
-                    position: "absolute",
-                    top: 24,
-                    right: 32,
-                    background: "transparent",
-                    border: "none",
-                    fontSize: 32,
-                    cursor: "pointer",
-                    color: "#000",
-                    zIndex: 10500,
-                    padding: 8,
-                    borderRadius: 8,
-                    transition: "background 0.2s"
-                  }}
-                  onClick={handleCloseModal}
-                  aria-label="Close"
-                >
-                  <IoMdClose />
-                </button>
+                <div className="modal-close-btn-wrapper">
+                  <button
+                    className="modal-close-btn"
+                    onClick={handleCloseModal}
+                    aria-label="Close"
+                  >
+                    <IoMdClose />
+                  </button>
+                </div>
                 {/* Removed white gradient overlay for right side readability */}
                 <img
                   src={selectedProject.imgPath}
                   alt={selectedProject.title ? selectedProject.title : "Project image"}
-                  style={{ width: "100%", borderRadius: 8, marginBottom: 16, paddingTop: 32 }}
+                  style={{
+                    width: "100%",
+                    maxWidth: "800px",
+                    maxHeight: "500px",
+                    borderRadius: 8,
+                    marginBottom: 16,
+                    paddingTop: 32,
+                    objectFit: "contain",
+                    display: "block",
+                    marginLeft: "auto",
+                    marginRight: "auto"
+                  }}
                 />
                 <div style={{ marginBottom: 16 }}>
                   {selectedProject.modalContent ? selectedProject.modalContent : selectedProject.description}
@@ -266,15 +267,123 @@ function Projects() {
                 )}
               </div>
               <style>{`
+                .modal-overlay {
+                  position: fixed;
+                  top: 0;
+                  left: 0;
+                  width: 100vw;
+                  height: 100vh;
+                  background: rgba(0,0,0,0.7);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  z-index: 9999;
+                  overflow: hidden;
+                  backdrop-filter: blur(12px);
+                  -webkit-backdrop-filter: blur(12px);
+                }
+                .modal-content-outer {
+                  background: #f5f5f6;
+                  padding: 32px;
+                  border-radius: 18px;
+                  width: 90vw;
+                  max-width: 1600px;
+                  min-width: 320px;
+                  box-shadow: 0 2px 32px rgba(0,0,0,0.18);
+                  position: relative;
+                  animation: modalUp 0.4s cubic-bezier(.4,1.6,.6,1);
+                  max-height: 90vh;
+                  overflow-y: auto;
+                  padding-right: 80px;
+                }
                 @keyframes modalUp {
                   0% { transform: translateY(60px) scale(0.98); opacity: 0; }
                   100% { transform: translateY(0) scale(1); opacity: 1; }
                 }
+                /* Hide scrollbar for modal content */
+                .modal-content-scroll {
+                  scrollbar-width: none; /* Firefox */
+                  -ms-overflow-style: none; /* IE 10+ */
+                }
+                .modal-content-scroll::-webkit-scrollbar {
+                  display: none; /* Chrome/Safari/Webkit */
+                }
+                /* Apple-style sticky close button wrapper */
+                .modal-close-btn-wrapper {
+                  background-attachment: scroll;
+                  position: sticky;
+                  top: -24px;
+                  z-index: 9999;
+                  width: 140px;
+                  height: 0;
+                  display: flex;
+                  align-items: flex-start;
+                  justify-content: flex-end;
+                  margin-left: auto;
+                  margin-right: -36px;
+                  pointer-events: none;
+                }
+                .modal-close-btn {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background-attachment: scroll;
+                  width: 22px;
+                  height: 22px;
+                  min-width: 22px;
+                  min-height: 22px;
+                  margin-top: 0;
+                  margin-right: 0;
+                  background: #000;
+                  border: none;
+                  color: #f5f5f6;
+                  font-size: 16px;
+                  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                  font-weight: 400;
+                  line-height: 1;
+                  letter-spacing: -0.374px;
+                  border-radius: 50%;
+                  aspect-ratio: 1 / 1;
+                  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+                  cursor: pointer;
+                  pointer-events: auto;
+                  box-sizing: border-box;
+                  -webkit-font-smoothing: antialiased;
+                  transition: background 0.2s, box-shadow 0.2s;
+                  padding: 0;
+                }
+                .modal-close-btn:hover, .modal-close-btn:focus {
+                  background: #f2f2f2;
+                  box-shadow: 0 4px 16px rgba(0,0,0,0.16);
+                  outline: none;
+                }
                 @media (max-width: 767px) {
-                  /* Target the modal content wrapper directly for mobile */
-                  .project-section > div[style*='position: fixed'] > div[style] {
-                    padding-right: 8px !important;
-                    padding-left: 8px !important;
+                  .modal-overlay {
+                    align-items: stretch;
+                    justify-content: stretch;
+                    width: 100vw;
+                    height: 100vh;
+                    overflow: auto;
+                  }
+                  .modal-content-outer {
+                    width: 100vw !important;
+                    min-width: 0 !important;
+                    max-width: 100vw !important;
+                    height: 100vh !important;
+                    max-height: none !important;
+                    border-radius: 0 !important;
+                    padding: 16px 8px 24px 8px !important;
+                    box-shadow: none !important;
+                    overflow-y: auto !important;
+                  }
+                  .modal-close-btn-wrapper {
+                    top: 0;
+                    right: 0;
+                    width: 96px;
+                    margin-right: -8px;
+                  }
+                  .modal-close-btn {
+                    margin-top: 0;
                   }
                 }
               `}</style>

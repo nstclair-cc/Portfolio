@@ -3,78 +3,75 @@ import headingStyles from "./ModalHeadingStyles";
 
 const StraightLineModalContent = () => (
   <div style={{ textAlign: 'left', fontFamily: 'Raleway, sans-serif' }}>
-    <h3 style={headingStyles.h3}>But Is It Supposed to Be a Straight Line?</h3>
-    <hr />
-    <div style={{ fontWeight: 'bold', color: '#000' }}>UX Research, Learning Sciences, and Data Visualization</div>
-    <div>2018–2023</div>
-    <p><em>Longitudinal classroom-based study on students’ interpretation of real-time graphs and data during open-ended science inquiry</em></p>
-    <hr />
-    <div><strong style={{ fontWeight: 800 }}>Project Role:</strong> UX Researcher, Qualitative Analyst, Project Manager</div>
-    <div><strong style={{ fontWeight: 800 }}>Platforms:</strong> CODAP, Adobe Photoshop, Transana, custom online portals</div>
-    <div><strong style={{ fontWeight: 800 }}>Deliverables:</strong> Peer-reviewed paper in the International Journal of Science Education (2024), national conference talks</div>
-    <div><strong style={{ fontWeight: 800 }}>Timeline:</strong> 5 years (3 years data collection + classroom visits, 2 years analysis & publication)</div>
-    <hr />
+<h3 style={headingStyles.h3}>But Is It Supposed to Be a Straight Line?</h3>
+<hr />
+<div style={{ fontWeight: 'bold', color: '#000' }}>UX Research, Learning Sciences, and Data Visualization</div>
+<div>2018–2023</div>
+<p><em>Longitudinal classroom-based study on students’ interpretation of real-time graphs and data during open-ended science inquiry</em></p>
+<hr />
+<div><strong style={{ fontWeight: 800 }}>Project Role:</strong> UX Researcher, Qualitative Analyst, Project Manager</div>
+<div><strong style={{ fontWeight: 800 }}>Platforms:</strong> CODAP, Adobe Photoshop, Transana, custom online portals</div>
+<div><strong style={{ fontWeight: 800 }}>Deliverables:</strong> Peer-reviewed paper in the International Journal of Science Education (2024), national conference talks</div>
+<div><strong style={{ fontWeight: 800 }}>Timeline:</strong> 5 years (3 years data collection + classroom visits, 2 years analysis & publication)</div>
+<hr />
 
-    <h4 style={headingStyles.h4}>Project Overview</h4>
-    <p>
-      As part of the $5M NSF-funded InquirySpace II project, this study explored how ninth-grade students interpreted real-time sensor data in a web-based science inquiry environment. We focused specifically on how students made sense of pressure sensor graphs — and the hidden UX and scaling challenges they faced that teachers and researchers didn’t notice in the moment.
-    </p>
-    <p>
-      I led qualitative research and analysis for this study, working alongside senior researchers to synthesize hundreds of hours of classroom data into a widely cited open-source research paper. This work was conducted just before the COVID-19 shift to remote learning, capturing one of the last in-person classroom datasets of the grant.
-    </p>
+<h4 style={headingStyles.h4}>Project Overview</h4>
+<p>
+I led the UX research and qualitative analysis for this NSF-funded study, which examined how students interpret real-time graph data during hands-on science experiments. My work focused on surfacing subtle UX breakdowns that hinder students’ ability to make sense of pressure sensor data, especially when those breakdowns go unnoticed by teachers or researchers in the moment.
+</p>
+<p>
+Working closely with two senior research scientists, I analyzed more than 100 hours of classroom footage and student artifacts to identify patterns of misunderstanding rooted in graph scale and framing. This work culminated in a citable open-access paper, and helped shape future design decisions in CODAP and its instructional materials.
+</p>
 
-    <h4 style={headingStyles.h4}>Problem Statement</h4>
-    <ul>
-      <li>How do students interpret real-time graphing data during open-ended experimentation in biology class?</li>
-      <li>What invisible UX challenges emerge when students engage with complex sensor tools and digital graphs?</li>
-      <li>How can qualitative research help us improve the design and scaffolding of data tools like CODAP in classrooms?</li>
-    </ul>
+<h4 style={headingStyles.h4}>Problem Statement</h4>
+<ul>
+  <li>How do students interpret real-time graphing data during open-ended experimentation in biology class?</li>
+  <li>What invisible UX challenges emerge when students engage with complex sensor tools and digital graphs?</li>
+  <li>How can qualitative research help us improve the design and scaffolding of data tools like CODAP in classrooms?</li>
+</ul>
 
-    <h4 style={headingStyles.h4}>The Solution</h4>
-    <p>
-      We conducted an embedded case study of one classroom using pressure sensors during an inquiry biology unit. Over 65 student screencasts, 5 whole-class video sessions, CODAP artifacts, teacher debriefs, and daily field notes were coded and analyzed using Transana. A key finding was that students were misinterpreting graph scale and slope — not due to conceptual misunderstanding, but due to subtle issues in the graph’s UX and framing.
-    </p>
-    <p>
-      This insight became a cornerstone of our 2024 IJSE paper and influenced how we later designed scaffolds in both the CODAP platform and teacher-facing instructional guides.
-    </p>
+<h4 style={headingStyles.h4}>The Solution</h4>
+<p>
+We conducted a multi-modal case study in a high school biology class using pressure sensors and CODAP. I analyzed screencasts, class video, graphs, written work, and teacher interviews to trace where and how students got stuck. A key finding: students often misread flat lines as “no change,” not because of conceptual gaps, but because of subtle interface choices in graph scaling and feedback.
+</p>
+<p>
+These insights informed both the CODAP platform’s interface updates and the design of teacher-facing supports for graph interpretation.
+</p>
 
-    <h4 style={headingStyles.h4}>Aligning Goals</h4>
-    <p>
-      My goal was to help the team surface the hidden struggles that students experience when interpreting data in real time. These issues aren’t always caught in post-tests or multiple-choice assessments — they show up in interaction, hesitation, and group problem-solving dynamics.
-    </p>
-    <p>
-      This project also trained me to manage complex, multi-modal data across time, tools, and settings — and reinforced my commitment to equitable, accessible STEM learning design.
-    </p>
+<h4 style={headingStyles.h4}>Aligning Goals</h4>
+<p>
+My goal was to help the team notice what typical assessments often miss: the real-time moments when students hesitate, get confused, or misread data. This project helped me get comfortable working across messy, multi-modal data and strengthened my drive to design tools that make data literacy more accessible to all learners.
+</p>
 
-    <h4 style={headingStyles.h4}>Discover</h4>
-    <ul>
-      <li>Reviewed over 100+ hours of screencast and classroom video data</li>
-      <li>Used Transana for micro-level qualitative coding and visualization of data-use behaviors</li>
-      <li>Analyzed student artifacts across platforms: CODAP graphs, written notebooks, and portal-based responses</li>
-      <li>Conducted daily teacher debriefs and post-unit interviews to understand classroom patterns</li>
-    </ul>
+<h4 style={headingStyles.h4}>Discover</h4>
+<ul>
+  <li>Reviewed 100+ hours of screencast and classroom video</li>
+  <li>Used Transana for fine-grained qualitative coding of interaction behaviors</li>
+  <li>Analyzed student-created artifacts: graphs, notebooks, and online responses</li>
+  <li>Facilitated teacher debriefs and post-unit interviews to capture classroom context</li>
+</ul>
 
-    <h4 style={headingStyles.h4}>Define</h4>
-    <ul>
-      <li>Identified a recurring challenge where students misunderstood whether a flat line meant “no change” — a UX problem rooted in graph scaling</li>
-      <li>Surfaced a gap in scaffold design around interpreting small data changes in real-time experiments</li>
-      <li>Captured one of the final in-person classroom implementations before the COVID-19 shift to remote learning</li>
-    </ul>
+<h4 style={headingStyles.h4}>Define</h4>
+<ul>
+  <li>Identified recurring confusion around flat lines and graph scale interpretation</li>
+  <li>Mapped student struggles to UX design gaps in real-time data tools</li>
+  <li>Captured critical insights from a pre-pandemic in-person dataset</li>
+</ul>
 
-    <h4 style={headingStyles.h4}>Develop</h4>
-    <ul>
-      <li>Wrote and revised manuscripts in collaboration with senior researchers</li>
-      <li>Managed coordination of complex research assets across teams and tools</li>
-      <li>Helped shape follow-up studies and teacher materials based on this case</li>
-    </ul>
+<h4 style={headingStyles.h4}>Develop</h4>
+<ul>
+  <li>Co-authored and revised research manuscripts with the team</li>
+  <li>Coordinated assets across video, coding, and artifact analysis</li>
+  <li>Helped shape future classroom studies and teacher supports</li>
+</ul>
 
-    <h4 style={headingStyles.h4}>Deliver</h4>
-    <ul>
-      <li>Published <em>“But Is It Supposed to Be a Straight Line?”</em> in the International Journal of Science Education (2024)</li>
-      <li>Presented at national learning sciences conferences</li>
-      <li>Influenced future classroom design of CODAP sensor tools and visual scaffolds</li>
-      <li>Gained deep respect for the “hidden UX” of scientific data in classroom practice</li>
-    </ul>
+<h4 style={headingStyles.h4}>Deliver</h4>
+<ul>
+  <li>Published <em>“But Is It Supposed to Be a Straight Line?”</em> in IJSE (2024)</li>
+  <li>Presented findings at national learning sciences conferences</li>
+  <li>Informed CODAP design updates for data graphing and scaffolding</li>
+  <li>Elevated the importance of “hidden UX” in classroom science tools</li>
+</ul>
   </div>
 );
 
