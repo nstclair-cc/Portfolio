@@ -5,7 +5,6 @@
 <br/>
 
 <p align="center">
-  <img src="src/Assets/avatar.svg" alt="Natalya Avatar" height="120" style="border-radius:50%;margin:8px;" />
   <img src="src/Assets/logo-Nc.png" alt="NC Logo" height="80" style="margin:8px;" />
 </p>
 
