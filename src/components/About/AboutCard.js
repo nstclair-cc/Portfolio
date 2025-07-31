@@ -11,7 +11,7 @@ function AboutCard() {
             Hi Everyone, I am <span className="purple">Natalya St. Clair </span>
             from <span className="purple"> San Francisco (East Bay Area).</span>
             <br />
-            I have completed a Master's degree in Education Technology at Harvard Graduate School of Education and a Bachelor's degree in mathematics and studio art.
+            I have completed a Master's degree in Education Technology at Harvard Graduate School of Education and a Bachelor's degree in mathematics and studio art at Scripps College.
             <br />
             <br />
             Apart from coding, some other activities that I love to do!

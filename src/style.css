@@ -546,6 +546,8 @@ button:focus {
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
+  white-space: normal;
+  text-align: center;
 }
 
 .card-btn-row {

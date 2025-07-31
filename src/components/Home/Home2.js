@@ -14,21 +14,21 @@ function Home2() {
             <img src={myImg} className="img-fluid" alt="avatar" />
           </Col>
           <Col md={8} className="home-about-description d-flex flex-column align-items-center">
-            <h1 style={{ fontSize: "2.6em" }} data-aos="fade-up">
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
-            </h1>
-            <p className="home-about-body text-center">
-                I help teams make tools that are easier to use and easier to understand—especially in education, data, and research.
-                <br />
-                <br />
-                My background includes <b className="purple">User Experience research, Quality Assurance testing, and curriculum design</b>. I’ve worked on classroom tools, helped students make sense of real-time graphs, and built systems to catch bugs before they reach users.
-                <br />
-                <br />
-                I come from a mix of <i><b className="purple">math, art, and tech</b></i>, and I like projects where clear thinking and good design go hand in hand.
-                <br />
-                <br />
-                I’m especially drawn to work that helps people learn something new or solve a problem that matters.
-              </p>
+          <h1 style={{ fontSize: "2.6em" }} data-aos="fade-up">
+            LET ME <span className="purple"> INTRODUCE </span> MYSELF
+          </h1>
+          <p className="home-about-body text-center">
+            I design and build tools that help people think more clearly—especially in education, data, and research.
+            <br />
+            <br />
+            My work spans <b className="purple">UX research, QA automation, and curriculum design</b>. I've built classroom data tools used by millions of students, created test systems that caught thousands of bugs before they reached users, and helped teams understand how learners reason with complex visualizations.
+            <br />
+            <br />
+            My background blends <i><b className="purple">math, art, and code</b></i>—a perspective that helps me approach problems both creatively and systematically. I’m also the co-creator of a series of animated math lessons that have reached over <b className="purple">9 million viewers</b> on TED-Ed.
+            <br />
+            <br />
+            I care most about projects that help people learn something new, understand something hard, or solve a problem that matters.
+          </p>
           </Col>
         </Row>
         <Row>
