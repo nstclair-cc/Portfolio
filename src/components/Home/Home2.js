@@ -18,17 +18,17 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body text-center">
-              I’m a UX researcher, educator, and QA engineer passionate about making tools that help people think, learn, and solve meaningful problems.
-              <br />
-              <br />
-              Whether it’s automating workflows in <b className="purple">data science education</b>, researching how students interpret real-time graphs, or launching open-source tools for classrooms, I focus on clarity, accessibility, and real-world impact.
-              <br />
-              <br />
-              My background bridges <i><b className="purple">math, art, and technology</b></i> — and I’m happiest working on interdisciplinary teams where curiosity, creativity, and thoughtful design meet.
-              <br />
-              <br />
-              I’m drawn to projects that support people and the planet, whether that’s helping students make sense of data, supporting researchers with better tooling, or building experiences that make complexity easier to navigate.
-            </p>
+                I help teams make tools that are easier to use and easier to understand—especially in education, data, and research.
+                <br />
+                <br />
+                My background includes <b className="purple">User Experience research, Quality Assurance testing, and curriculum design</b>. I’ve worked on classroom tools, helped students make sense of real-time graphs, and built systems to catch bugs before they reach users.
+                <br />
+                <br />
+                I come from a mix of <i><b className="purple">math, art, and tech</b></i>, and I like projects where clear thinking and good design go hand in hand.
+                <br />
+                <br />
+                I’m especially drawn to work that helps people learn something new or solve a problem that matters.
+              </p>
           </Col>
         </Row>
         <Row>
