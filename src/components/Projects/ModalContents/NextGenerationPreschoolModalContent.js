@@ -17,7 +17,7 @@ const NextGenerationPreschoolModalContent = () => (
     <hr />
     <h4 style={headingStyles.h4}>Project Overview</h4>
     <p>
-      In partnership with WGBH, EDC, and SRI International, this project evaluated a tablet-based curriculum designed to promote early science learning for preschoolers in underserved communities. The curriculum—part of the NSF-funded Next Generation Preschool Science (NGPS) project—aimed to foster core science practices such as observing, predicting, experimenting, and analyzing data through a blended experience of digital tools and hands-on activities.
+      In partnership with public media producer WGBH, Education Development Center, and SRI International, this project evaluated a tablet-based curriculum designed to promote early science learning for preschoolers in underserved communities. The curriculum—part of a National Science Foundation-funded initiative called Next Generation Preschool Science—aimed to foster core science practices such as observing, predicting, experimenting, and analyzing data through a blended experience of digital tools and hands-on activities.
     </p>
     <p>
       Our goal was to understand how children and teachers interacted with the NGPS tools in real classroom settings, and to identify both opportunities and obstacles in seamlessly integrating iPad activities with physical science investigations focused on topics like ramps, plants, and shadows.
