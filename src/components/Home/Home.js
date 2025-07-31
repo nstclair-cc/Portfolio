@@ -80,32 +80,34 @@ function Home() {
         <Row style={{ justifyContent: "center" }}>
           {projects.slice(0, 4).map((project, idx) => (
             <Col md={6} lg={3} key={project.title + "-preview-" + idx} style={{ marginBottom: 24 }}>
-              <ProjectCard
-                {...project}
-                onOpenModal={() => handleProjectClick(project)}
-                renderImage={() => (
-                  <img
-                    src={project.imgPath}
-                    alt={project.title}
-                    onClick={e => {
-                      e.stopPropagation();
-                      handleProjectClick(project);
-                    }}
-                    style={{ cursor: 'pointer', width: '100%', borderRadius: 8, marginBottom: 0 }}
-                  />
-                )}
-                renderTitle={() => (
-                  <h2
-                    onClick={e => {
-                      e.stopPropagation();
-                      handleProjectClick(project);
-                    }}
-                    style={{ cursor: 'pointer', marginBottom: 8 }}
-                  >
-                    {project.title}
-                  </h2>
-                )}
-              />
+              <div className="featured-project-card-scale">
+                <ProjectCard
+                  {...project}
+                  onOpenModal={() => handleProjectClick(project)}
+                  renderImage={() => (
+                    <img
+                      src={project.imgPath}
+                      alt={project.title}
+                      onClick={e => {
+                        e.stopPropagation();
+                        handleProjectClick(project);
+                      }}
+                      style={{ cursor: 'pointer', width: '100%', borderRadius: 8, marginBottom: 0 }}
+                    />
+                  )}
+                  renderTitle={() => (
+                    <h2
+                      onClick={e => {
+                        e.stopPropagation();
+                        handleProjectClick(project);
+                      }}
+                      style={{ cursor: 'pointer', marginBottom: 8 }}
+                    >
+                      {project.title}
+                    </h2>
+                  )}
+                />
+              </div>
             </Col>
           ))}
         </Row>

@@ -1,3 +1,13 @@
+/* Featured Projects preview card scale effect */
+.featured-project-card-scale {
+  transition: transform 0.35s cubic-bezier(.4,1.6,.6,1), box-shadow 0.35s cubic-bezier(.4,1.6,.6,1);
+  will-change: transform;
+}
+.featured-project-card-scale:hover, .featured-project-card-scale:focus {
+  transform: scale(1.045);
+  box-shadow: 0 4px 16px 2px #bbb;
+  z-index: 2;
+}
 /* Explore more projects button scaling effect */
 .explore-projects-btn {
   background: #000;
