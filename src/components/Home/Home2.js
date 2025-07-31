@@ -14,7 +14,7 @@ function Home2() {
             <img src={myImg} className="img-fluid" alt="avatar" />
           </Col>
           <Col md={8} className="home-about-description d-flex flex-column align-items-center">
-          <h1 style={{ fontSize: "2.6em" }} data-aos="fade-up">
+          <h1 style={{ fontSize: "2.6em" }}>
             LET ME <span className="purple"> INTRODUCE </span> MYSELF
           </h1>
           <p className="home-about-body text-center">
@@ -33,7 +33,7 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className="d-flex flex-column align-items-center">
-            <div className="home-about-social mt-4" data-aos="fade-up">
+            <div className="home-about-social mt-4">
               <h1>FIND ME ON</h1>
               <p>
                 Feel free to <span className="purple">connect </span>with me
