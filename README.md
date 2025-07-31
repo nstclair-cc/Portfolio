@@ -1,6 +1,6 @@
 <h2 align="center">
-  Portfolio Website - v2.0<br/>
-  <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a>
+  Portfolio Website - NSC<br/>
+  <a href="https://natalyastclair.vercel.app/" target="_blank">https://natalyastclair.vercel.app/</a>
 </h2>
 <br/>
 
