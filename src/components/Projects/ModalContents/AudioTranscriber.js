@@ -6,7 +6,7 @@ const AudioTranscriberModalContent = () => (
     <h3 style={headingStyles.h3}>Audio Transcriber</h3>
     <hr />
     <div style={{ fontWeight: 'bold', color: '#000' }}>QA Engineering & Speech-to-Text Research</div>
-    <div>2 weeks (2024)</div>
+    <div>8 hours to build prototype</div>
     <p><em>Developed a secure, automated transcription tool for large-scale qualitative research — now open source</em></p>
     <hr />
     <div><strong style={{ fontWeight: 800 }}>Project Role:</strong> QA Engineer, UX Researcher, Project Lead</div>

@@ -110,21 +110,7 @@ function Home() {
         <div style={{ display: 'flex', justifyContent: 'center', marginTop: 24 }}>
           <a href="/project" style={{ textDecoration: 'none' }}>
             <button
-              style={{
-                background: '#000',
-                color: '#fff',
-                border: 'none',
-                borderRadius: 6,
-                padding: '12px 32px',
-                fontWeight: 600,
-                fontSize: 18,
-                boxShadow: '0 2px 8px rgba(0,0,0,0.10)',
-                cursor: 'pointer',
-                transition: 'background 0.2s, box-shadow 0.2s',
-                letterSpacing: 0.5,
-              }}
-              onMouseOver={e => { e.currentTarget.style.background = '#222'; }}
-              onMouseOut={e => { e.currentTarget.style.background = '#000'; }}
+              className="explore-projects-btn"
             >
               Explore more projects
             </button>

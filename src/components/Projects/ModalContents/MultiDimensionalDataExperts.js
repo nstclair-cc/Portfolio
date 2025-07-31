@@ -20,7 +20,7 @@ const MultiDataModalContent = () => (
     As first author, I helped carry out a study of how data experts approach unfamiliar multidimensional datasets. I conducted interviews, analyzed transcripts, and led the writing of the final paper. The study design was developed in collaboration with two senior scientists, who guided the early framing and protocol.
     </p>
     <p>
-    Together, we uncovered expert strategies for structuring complex data—insights that later shaped both student-facing research and interface design in CODAP. Our paper received an Outstanding Paper Award at the 2023 International Society of the Learning Sciences (ISLS) conference.
+    Together, we uncovered expert strategies for structuring complex data—insights that later shaped both student-facing research and interface design in CODAP. Our paper received an Outstanding Paper Award at the 2024 International Society of the Learning Sciences (ISLS) conference.
     </p>
 
     <h4 style={headingStyles.h4}>Problem Statement</h4>
@@ -75,7 +75,7 @@ const MultiDataModalContent = () => (
 
     <h4 style={headingStyles.h4}>Deliver</h4>
     <ul>
-      <li>First author on an award-winning paper presented at ISLS 2023</li>
+      <li>First author on an <a href="https://2024.isls.org/outstanding-paper-awards/" target="_blank" rel="noopener noreferrer">award-winning paper presented at ISLS 2024</a></li>
       <li>Findings directly shaped a later student interview study focused on how learners structure and analyze data</li>
       <li>Established a new research precedent for incorporating expert workflows into early design and evaluation cycles</li>
       <li>Helped inform UX and layout recommendations for multidimensional table structures in the CODAP platform</li>

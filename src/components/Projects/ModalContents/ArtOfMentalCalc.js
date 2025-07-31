@@ -16,12 +16,12 @@ const MentalCalcModalContent = () => (
     <hr />
 
     <h4 style={headingStyles.h4}>Project Overview</h4>
-    <p>
-      As an undergraduate double majoring in art and mathematics, I collaborated with Dr. Arthur Benjamin to illustrate and co-author a 40-lesson mental math curriculum for middle school students. Our goal was to make mental arithmetic engaging, visual, and accessible — a project that bridged my passions for math education and design.
-    </p>
-    <p>
-      This early project grew into an ongoing partnership: I later illustrated and typeset Dr. Benjamin’s New York Times bestselling books, <em>The Magic of Math</em> and <em>Secrets of Mental Math</em>, helping to bring clarity and visual delight to hundreds of mathematical concepts.
-    </p>
+      <p>
+      I illustrated and co-authored a 40-lesson mental math curriculum with Dr. Arthur Benjamin—work that later evolved into two <strong>New York Times bestselling books</strong>, <em><a href="https://a.co/d/1NnntYn" target="_blank">The Magic of Math</a></em> and <em><a href="https://a.co/d/d0BQU0w" target="_blank">Secrets of Mental Math</a></em>. This project combined my dual background in mathematics and illustration to make abstract arithmetic concepts more visual, memorable, and fun.
+      </p>
+      <p>
+      What began as a college collaboration turned into a long-term creative partnership. I designed hundreds of custom diagrams, typeset full chapters in LaTeX, and helped shape a consistent visual voice across curriculum and trade books. The end result: a reusable visual system that continues to support learners of all ages.
+      </p>
 
     <h4 style={headingStyles.h4}>Problem Statement</h4>
     <ul>
@@ -39,7 +39,7 @@ const MentalCalcModalContent = () => (
 
     <h4 style={headingStyles.h4}>Aligning Goals</h4>
     <p>
-      This was a passion project and a turning point for me. I learned how to collaborate on large-scale creative and educational works, navigate the intricacies of remote production, and blend my love of math with visual storytelling. I also got very good at spotting typos — and occasionally, introducing them.
+    This was a passion project and a turning point for me. I learned how to collaborate on large-scale educational books, juggle precision and creativity in production workflows, and bring clarity to complex math through visuals. I also got very good at spotting typos—some of which I may or may not have introduced myself.
     </p>
 
     <h4 style={headingStyles.h4}>Discover</h4>
