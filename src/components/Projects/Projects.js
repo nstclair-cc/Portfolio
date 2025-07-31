@@ -40,14 +40,15 @@ export const projects = [
     demoLink: "https://ed.ted.com/lessons/the-unexpected-math-behind-van-gogh-s-starry-night-natalya-st-clair",
     modalContent: <TEDEdLesson />, 
   },
-  {
-    imgPath: straightLine,
+    {
+    imgPath: multiData,
     isBlog: false,
-    title: "But is it supposed to be a straight line?",
+    title: "Navigating Multidimensional Data Structures",
+    bannerText: "Best Long Paper Award",
     description:
-      "Students using classroom sensor tools often struggled to interpret noisy graph data. I led UX research to uncover where interactions broke down and proposed design changes to support graph literacy and smoother analysis.",
-    demoLink: "http://dx.doi.org/10.1080/09500693.2023.2260064",
-    modalContent: <StraightLine />, 
+      "As first author on an award-winning study, I examined how data experts explore unfamiliar datasets. We identified hands-on strategies that can guide the design of tools to help students make sense of complex data.",
+    demoLink: "https://doi.org/10.22318/icls2024.613673",
+    modalContent: <MultiDataModalContent />, 
   },
   {
     imgPath: mentalCalc,
@@ -59,15 +60,14 @@ export const projects = [
     demoLink: "https://www.amazon.com/dp/1495219968",
     modalContent: <ArtOfMentalCalc />, 
   },
-  {
-    imgPath: multiData,
+    {
+    imgPath: straightLine,
     isBlog: false,
-    title: "Navigating Multidimensional Data Structures",
-    bannerText: "Best Long Paper Award",
+    title: "But is it supposed to be a straight line?",
     description:
-      "As first author on an award-winning study, I examined how data experts explore unfamiliar datasets. We identified hands-on strategies that can guide the design of tools to help students make sense of complex data.",
-    demoLink: "https://doi.org/10.22318/icls2024.613673",
-    modalContent: <MultiDataModalContent />, 
+      "Students using classroom sensor tools often struggled to interpret noisy graph data. I led UX research to uncover where interactions broke down and proposed design changes to support graph literacy and smoother analysis.",
+    demoLink: "http://dx.doi.org/10.1080/09500693.2023.2260064",
+    modalContent: <StraightLine />, 
   },
   {
     imgPath: codapCypress,

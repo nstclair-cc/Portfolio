@@ -4,17 +4,27 @@ import { Button } from "react-bootstrap";
 import { DiGoogleDrive } from "react-icons/di";
 import { IoMdClose } from "react-icons/io";
 
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Tilt from "react-parallax-tilt";
 import { Container, Row, Col } from "react-bootstrap";
 // import Particle from "../Particle";
 import Home2 from "./Home2";
-import Type from "./Type";
+import FadeType from "./FadeType";
 import womanComputer from "../../Assets/avatar.png";
 
 
 function Home() {
   const [selectedProject, setSelectedProject] = React.useState(null);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 900,
+      once: true,
+      easing: 'ease-out-cubic',
+    });
+  }, []);
 
   // Helper to open modal with project details
   const handleProjectClick = (project) => {
@@ -28,9 +38,8 @@ function Home() {
 
   return (
     <section>
-      <Container fluid className="home-section" id="home">
-        {/* <Particle /> */}
-        <Container className="home-content">
+      <Container fluid className="home-section" id="home" data-aos="fade-up">
+        <Container className="home-content" style={{ paddingTop: 0, padding:50, textAlign: 'left' }}>
           <Row>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
@@ -40,13 +49,13 @@ function Home() {
                 </span>
               </h1>
 
-              <h1 className="heading-name">
+              <h1 className="heading-name" data-aos="fade-up">
                 I'M
-                <strong className="main-name"> NATALYA ST. CLAIR</strong>
+                <strong className="main-name" data-aos="fade-up"> NATALYA ST. CLAIR</strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
-                <Type />
+                <FadeType />
               </div>
             </Col>
             <Col
@@ -74,7 +83,7 @@ function Home() {
       </Container>
       {/* Featured Projects Preview */}
       <Container className="home-projects-preview" style={{ marginTop: 40, marginBottom: 40 }}>
-        <h2 style={{ fontWeight: 700, fontSize: 32, marginBottom: 24 }}>Recent Projects</h2>
+        <h2 style={{ fontWeight: 700, fontSize: 32, marginBottom: 24 }} data-aos="fade-up">Featured Projects</h2>
         <Row style={{ justifyContent: "center" }}>
           {projects.slice(0, 4).map((project, idx) => (
             <Col md={6} lg={3} key={project.title + "-preview-" + idx} style={{ marginBottom: 24 }}>
@@ -342,7 +351,9 @@ function Home() {
           `}</style>
         </div>
       )}
-      <Home2 />
+      <div data-aos="fade-up">
+        <Home2 />
+      </div>
     </section>
   );
 }
