@@ -8,6 +8,8 @@ import MultiDataModalContent from "./ModalContents/MultiDimensionalDataExperts";
 import NextGenerationPreschoolModalContent from "./ModalContents/NextGenerationPreschoolModalContent";
 
 import Button from "react-bootstrap/Button";
+import { CgWebsite } from "react-icons/cg";
+import { BsGithub } from "react-icons/bs";
 import { DiGoogleDrive } from "react-icons/di";
 
 import React, { useState } from "react";
@@ -16,13 +18,14 @@ import Particle from "../Particle";
 import ProjectCard from "./ProjectCards";
 import { IoMdClose } from "react-icons/io";
 // Import project images
-import audioTranscriber from "../../Assets/Projects/audio-transcriber.png";
-import starryNight from "../../Assets/Projects/starry-night.png";
-import multiData from "../../Assets/Projects/multi-data.png";
-import straightLine from "../../Assets/Projects/straight-line.png";
-import mentalCalc from "../../Assets/Projects/mental-calc.png";
-import wbghNgps from "../../Assets/Projects/wbgh-ngps.png";
-import codap from "../../Assets/Projects/codap.png";
+import audioTranscriber from "../../Assets/Projects/audio-transcriber.svg";
+import starryNight from "../../Assets/Projects/starry-night.svg";
+import multiData from "../../Assets/Projects/multi-data.svg";
+import straightLine from "../../Assets/Projects/straight-line.svg";
+import mentalCalc from "../../Assets/Projects/mental-calc.svg";
+import wbghNgps from "../../Assets/Projects/wgbh-ngps.svg";
+import codapCypress from "../../Assets/Projects/codap-cypress.svg";
+import codap from "../../Assets/Projects/codap.svg";
 // Import modal content components
 
 // ...existing code...
@@ -67,7 +70,7 @@ export const projects = [
     modalContent: <MultiDataModalContent />, 
   },
   {
-    imgPath: codap,
+    imgPath: codapCypress,
     isBlog: false,
     title: "CODAP automation",
     description:
@@ -217,16 +220,16 @@ function Projects() {
                   src={selectedProject.imgPath}
                   alt={selectedProject.title ? selectedProject.title : "Project image"}
                   style={{
-                    width: "100%",
-                    maxWidth: "800px",
-                    maxHeight: "500px",
+                    width: '100%',
+                    height: 'auto',
+                    maxHeight: '95vh',
                     borderRadius: 8,
                     marginBottom: 16,
                     paddingTop: 32,
-                    objectFit: "contain",
-                    display: "block",
-                    marginLeft: "auto",
-                    marginRight: "auto"
+                    objectFit: 'contain',
+                    display: 'block',
+                    marginLeft: 'auto',
+                    marginRight: 'auto',
                   }}
                 />
                 <div style={{ marginBottom: 16 }}>
@@ -241,6 +244,7 @@ function Projects() {
                     rel="noopener noreferrer"
                     style={{ marginRight: 12 }}
                   >
+                    <CgWebsite style={{ verticalAlign: 'middle', marginRight: 4 }} />
                     Demo
                   </Button>
                 )}
@@ -253,6 +257,7 @@ function Projects() {
                     rel="noopener noreferrer"
                     style={{ marginRight: 12 }}
                   >
+                    <BsGithub style={{ verticalAlign: 'middle', marginRight: 4 }} />
                     GitHub
                   </Button>
                 )}
@@ -265,7 +270,8 @@ function Projects() {
                     rel="noopener noreferrer"
                     style={{ marginLeft: 12 }}
                   >
-                    <DiGoogleDrive /> &nbsp;Drive
+                    <DiGoogleDrive style={{verticalAlign: 'middle', marginRight: 4}} />
+                    Drive
                   </Button>
                 )}
               </div>
