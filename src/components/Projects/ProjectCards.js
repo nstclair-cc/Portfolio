@@ -31,17 +31,18 @@ function ProjectCards(props) {
           className="project-card-banner"
           style={{
             position: 'absolute',
-            top: 14,
+            top: 24,
             left: 0,
-            width: '100%',
+            width: 'calc(100% - 44px)',
+            right: 44,
             zIndex: 2,
-            height: 44,
-            background: props.bannerColor || '#EDBA19',
+            height: 28,
+            background: props.bannerColor || '#56919c',
             color: '#fff',
             fontWeight: 700,
-            fontSize: 18,
+            fontSize: 16,
             textAlign: 'center',
-            lineHeight: '44px',
+            lineHeight: '28px',
             margin: 0,
             boxShadow: '0 2px 8px rgba(0,0,0,0.10)',
             letterSpacing: 1,
@@ -52,7 +53,7 @@ function ProjectCards(props) {
             alignItems: 'center',
             justifyContent: 'center',
             pointerEvents: 'none',
-            clipPath: 'polygon(100% 0, 95% 50%, 100% 100%, 0% 100%, 0% 0%)',
+            // Rectangle shape: remove clipPath
           }}
         >
           {props.bannerText}
