@@ -6,6 +6,7 @@ import TEDEdLesson from "./ModalContents/TEDEdLessons";
 import ArtOfMentalCalc from "./ModalContents/ArtOfMentalCalc";
 import MultiDataModalContent from "./ModalContents/MultiDimensionalDataExperts";
 import NextGenerationPreschoolModalContent from "./ModalContents/NextGenerationPreschoolModalContent";
+import InternalDocumentationModalContent from "./ModalContents/InternalDocumentation";
 
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
@@ -26,6 +27,7 @@ import mentalCalc from "../../Assets/Projects/mental-calc.svg";
 import wbghNgps from "../../Assets/Projects/wgbh-ngps.svg";
 import codapCypress from "../../Assets/Projects/codap-cypress.svg";
 import codap from "../../Assets/Projects/codap.svg";
+import documentationImage from "../../Assets/Projects/internal-documentation.svg";
 // Import modal content components
 
 // ...existing code...
@@ -108,6 +110,15 @@ export const projects = [
       "https://drive.google.com/file/d/0BwPizBG8eJiyTlNDd3g4R3NKNWs/view?usp=sharing&resourcekey=0-94YjkFo5wHg7M7eT5x0BQQ",
     modalContent: <NextGenerationPreschoolModalContent />, 
   },
+    {
+    imgPath: documentationImage, // (Replace with actual image reference)
+    isBlog: false,
+    title: "Internal Documentation",
+    description:
+      "I led an internal documentation effort at The Concord Consortium to make our products more usable for curriculum, research, and product teams. Through screencasts, prompts, and trainings, we transformed internal knowledge into a shared, accessible resource.",
+    demoLink: "https://learn.concord.org/help", // Use this if you’d like the Help Center to be linked
+    modalContent: <InternalDocumentationModalContent />,
+  }
 ];
 
 function Projects() {
