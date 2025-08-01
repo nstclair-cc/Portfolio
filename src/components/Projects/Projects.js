@@ -33,7 +33,7 @@ export const projects = [
     {
     imgPath: starryNight,
     isBlog: false,
-    bannerText: "9.5 Million+ Views on YouTube",
+    bannerText: "9.5 Million+ Views",
     title: "TED-Ed",
     description:
       "Many students see math as disconnected from creativity. I wrote scripts for three TED-Ed videos that reveal its role in art, music, and literature, crafting clear, engaging stories that make abstract ideas feel intuitive.",
