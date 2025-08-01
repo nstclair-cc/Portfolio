@@ -117,7 +117,7 @@ function ProjectCards(props) {
             }}
             style={{ marginRight: "10px" }}
           >
-            <RxOpenInNewWindow style={{ fontSize: 18, verticalAlign: 'middle' }} /> &nbsp;Open
+            <RxOpenInNewWindow style={{ fontSize: 18, verticalAlign: 'middle' }} /> &nbsp;More Info
           </Button>
         </div>
       </Card.Body>

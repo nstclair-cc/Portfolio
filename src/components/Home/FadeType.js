@@ -23,11 +23,15 @@ function FadeType() {
   const [fade, setFade] = useState(true);
 
   useEffect(() => {
-    const fadeOut = setTimeout(() => setFade(false), 4800); // fade out after 4.8s
+    const fadeOut = setTimeout(() => setFade(false), 1800); // fade out after 1.8s
     const next = setTimeout(() => {
-      setIndex((i) => (i + 1) % roles.length);
+      let nextIdx;
+      do {
+        nextIdx = Math.floor(Math.random() * roles.length);
+      } while (nextIdx === index && roles.length > 1);
+      setIndex(nextIdx);
       setFade(true);
-    }, 5500); // next role after 5.5s
+    }, 3200); // next role after 3.2s
     return () => {
       clearTimeout(fadeOut);
       clearTimeout(next);
@@ -39,7 +43,7 @@ function FadeType() {
       style={{
         display: "inline-block",
         opacity: fade ? 1 : 0,
-        transition: "opacity 1.2s cubic-bezier(.4,1.6,.6,1)",
+        transition: "opacity 0.6s cubic-bezier(.4,1.6,.6,1)",
         minHeight: 48,
         fontSize: '2.2em',
         fontWeight: 600,

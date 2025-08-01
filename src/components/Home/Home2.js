@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/home-main.svg";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import { SiResearchgate } from "react-icons/si";
+import { SiResearchgate, SiTwitter } from "react-icons/si";
 
 function Home2() {
   return (
@@ -57,6 +57,16 @@ function Home2() {
                     className="icon-colour  home-social-icons"
                   >
                     <AiFillGithub />
+                  </a>
+                </li>
+                <li className="social-icons">
+                  <a
+                    href="https://x.com/natalyastclair"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="icon-colour home-social-icons"
+                  >
+                    <SiTwitter />
                   </a>
                 </li>
                 <li className="social-icons">
