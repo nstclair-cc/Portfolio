@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 
 const roles = [
-  "TED-Ed Contributor",
-  "Award-Winning Author",
-  "Math & Logic Advocate",
+  "Viral TED-Ed Author",
+  "Award-Winning UXR Author",
+  "Mathematics Enthusiast",
   "UX Research Specialist",
   "EdTech Product Manager",
   "Education Technologist",
@@ -40,6 +40,7 @@ function FadeType() {
 
   return (
     <span
+      className="role"
       style={{
         display: "inline-block",
         opacity: fade ? 1 : 0,
