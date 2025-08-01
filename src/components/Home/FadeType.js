@@ -1,21 +1,21 @@
 import React, { useState, useEffect } from "react";
 
 const roles = [
-  "TED-ED Author",
+  "TED-Ed Contributor",
   "Award-Winning Author",
-  "Mathematics Enthusiast",
-  "UX Researcher",
-  "Product Manager",
+  "Math & Logic Advocate",
+  "UX Research Specialist",
+  "EdTech Product Manager",
   "Education Technologist",
-  "Learning Scientist",
-  "Data Visualization Specialist",
-  "STEM Educator",
-  "Qualitative Analyst",
-  "Research Associate",
-  "Project Manager",
-  "Curriculum Developer",
-  "Data Analyst",
-  "Open Source Contributor",
+  "Learning Experience Lead",
+  "Data Viz Specialist",
+  "STEM Education Expert",
+  "Qualitative Researcher",
+  "Research Collaborator",
+  "Project Team Lead",
+  "Curriculum Designer",
+  "Education Data Analyst",
+  "Open Source Advocate",
 ];
 
 function FadeType() {
