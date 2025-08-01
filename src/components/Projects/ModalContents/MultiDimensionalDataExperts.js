@@ -17,7 +17,7 @@ const MultiDataModalContent = () => (
     <hr />
     <h4 style={headingStyles.h4}>Project Overview</h4>
     <p>
-    As first author, I helped carry out a study of how data experts approach unfamiliar multidimensional datasets. I conducted interviews, analyzed transcripts, and led the writing of the final paper. The study design was developed in collaboration with two senior scientists, who guided the early framing and protocol.
+    As first author, I helped carry out a study of how data experts approach unfamiliar multidimensional datasets. I conducted interviews, analyzed transcripts, and led the writing of the final paper. The study design was part of the $3 million NSF <a href="https://concord.org/our-work/research-projects/multidata/" target="_blank">MultiData Data Project</a>.
     </p>
     <p>
     Together, we uncovered expert strategies for structuring complex data—insights that later shaped both student-facing research and interface design in CODAP. Our paper received an Outstanding Paper Award at the 2024 International Society of the Learning Sciences (ISLS) conference.

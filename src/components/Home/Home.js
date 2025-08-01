@@ -4,7 +4,7 @@ import { Button } from "react-bootstrap";
 import { DiGoogleDrive } from "react-icons/di";
 import { IoMdClose } from "react-icons/io";
 
-import React, { useEffect } from "react";
+import React from "react";
 import Tilt from "react-parallax-tilt";
 import { Container, Row, Col } from "react-bootstrap";
 // import Particle from "../Particle";
@@ -77,37 +77,35 @@ function Home() {
       {/* Featured Projects Preview */}
       <Container className="home-projects-preview" style={{ marginTop: 40, marginBottom: 40 }}>
         <h2 style={{ fontWeight: 700, fontSize: 32, marginBottom: 24 }}>Featured Projects</h2>
-        <Row style={{ justifyContent: "center" }}>
-          {projects.slice(0, 4).map((project, idx) => (
-            <Col md={6} lg={3} key={project.title + "-preview-" + idx} style={{ marginBottom: 24 }}>
-              <div className="featured-project-card-scale">
-                <ProjectCard
-                  {...project}
-                  onOpenModal={() => handleProjectClick(project)}
-                  renderImage={() => (
-                    <img
-                      src={project.imgPath}
-                      alt={project.title}
-                      onClick={e => {
-                        e.stopPropagation();
-                        handleProjectClick(project);
-                      }}
-                      style={{ cursor: 'pointer', width: '100%', borderRadius: 8, marginBottom: 0 }}
-                    />
-                  )}
-                  renderTitle={() => (
-                    <h2
-                      onClick={e => {
-                        e.stopPropagation();
-                        handleProjectClick(project);
-                      }}
-                      style={{ cursor: 'pointer', marginBottom: 8 }}
-                    >
-                      {project.title}
-                    </h2>
-                  )}
-                />
-              </div>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          {projects.slice(0, 6).map((project, idx) => (
+            <Col md={4} className="project-card" key={project.title + "-preview-" + idx}>
+              <ProjectCard
+                {...project}
+                onOpenModal={() => handleProjectClick(project)}
+                renderImage={() => (
+                  <img
+                    src={project.imgPath}
+                    alt={project.title}
+                    onClick={e => {
+                      e.stopPropagation();
+                      handleProjectClick(project);
+                    }}
+                    style={{ cursor: 'pointer', width: '100%', borderRadius: 8, marginBottom: 0 }}
+                  />
+                )}
+                renderTitle={() => (
+                  <h2
+                    onClick={e => {
+                      e.stopPropagation();
+                      handleProjectClick(project);
+                    }}
+                    style={{ cursor: 'pointer', marginBottom: 8 }}
+                  >
+                    {project.title}
+                  </h2>
+                )}
+              />
             </Col>
           ))}
         </Row>
