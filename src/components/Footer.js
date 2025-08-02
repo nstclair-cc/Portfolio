@@ -13,10 +13,10 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Template designed and developed using React.js by Soumyajit Behera and modified by Natalya St. Clair</h3>
+          <h3>Created by Natalya St. Clair using React.js</h3>
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} SB | NSC</h3>
+          <h3>Copyright © {year} NSC</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
