@@ -332,15 +332,16 @@ function Projects() {
                 .modal-close-btn-wrapper {
                   background-attachment: scroll;
                   position: sticky;
-                  top: -24px;
+                  top: -40px; /* move further up */
+                  right: -64px; /* move even further right */
                   z-index: 9999;
-                  width: 140px;
+                  width: 200px;
                   height: 0;
                   display: flex;
                   align-items: flex-start;
                   justify-content: flex-end;
                   margin-left: auto;
-                  margin-right: -36px;
+                  margin-right: -96px;
                   pointer-events: none;
                 }
                 .modal-close-btn {
@@ -348,16 +349,16 @@ function Projects() {
                   align-items: center;
                   justify-content: center;
                   background-attachment: scroll;
-                  width: 22px;
-                  height: 22px;
-                  min-width: 22px;
-                  min-height: 22px;
-                  margin-top: 0;
-                  margin-right: 0;
+                  width: 26px;
+                  height: 26px;
+                  min-width: 26px;
+                  min-height: 26px;
+                  margin-top: -8px; /* move further up */
+                  margin-right: -8px; /* move further right */
                   background: #000;
                   border: none;
                   color: #f5f5f6;
-                  font-size: 16px;
+                  font-size: 18px;
                   font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
                   font-weight: 400;
                   line-height: 1;
@@ -397,13 +398,14 @@ function Projects() {
                     overflow-y: auto !important;
                   }
                   .modal-close-btn-wrapper {
-                    top: 0;
-                    right: 0;
-                    width: 96px;
-                    margin-right: -8px;
+                    top: -8px;
+                    right: -32px;
+                    width: 120px;
+                    margin-right: -32px;
                   }
                   .modal-close-btn {
-                    margin-top: 0;
+                    margin-top: -8px;
+                    margin-right: -8px;
                   }
                 }
               `}</style>
