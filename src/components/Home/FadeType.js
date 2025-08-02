@@ -5,11 +5,10 @@ const roles = [
   "Award-Winning UXR Author",
   "Mathematics Enthusiast",
   "UX Research Specialist",
-  "EdTech Product Manager",
+  "Product Manager",
   "Education Technologist",
-  "Learning Experience Lead",
   "Data Viz Specialist",
-  "STEM Education Expert",
+  "STEM Ed Tech",
   "Qualitative Researcher",
   "Research Collaborator",
   "Project Team Lead",
@@ -25,10 +24,7 @@ function FadeType() {
   useEffect(() => {
     const fadeOut = setTimeout(() => setFade(false), 1800); // fade out after 1.8s
     const next = setTimeout(() => {
-      let nextIdx;
-      do {
-        nextIdx = Math.floor(Math.random() * roles.length);
-      } while (nextIdx === index && roles.length > 1);
+      const nextIdx = (index + 1) % roles.length;
       setIndex(nextIdx);
       setFade(true);
     }, 3200); // next role after 3.2s
