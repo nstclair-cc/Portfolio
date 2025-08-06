@@ -1,3 +1,6 @@
+.card-text {
+  text-align: left !important;
+}
 /* Featured Projects scroll indicator styles */
 .home-projects-preview {
   margin-top: 40px;
