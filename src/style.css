@@ -1,3 +1,37 @@
+/* Featured Projects scroll indicator styles */
+.home-projects-preview {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+  .home-projects-preview {
+    margin-top: 56px !important;
+  }
+}
+
+.scroll-indicator-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000;
+}
+
+.chevron-bounce {
+  display: inline-block;
+  animation: bounceDown 1.2s infinite;
+  font-size: 16px;
+  margin-top: 2px;
+}
+
+@keyframes bounceDown {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(12px); }
+}
 /* Featured Projects preview card scale effect */
 .featured-project-card-scale {
   transition: transform 0.35s cubic-bezier(.4,1.6,.6,1), box-shadow 0.35s cubic-bezier(.4,1.6,.6,1);

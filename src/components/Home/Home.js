@@ -50,40 +50,18 @@ function Home() {
               {/* Scroll to Featured Projects indicator */}
               <div style={{ display: 'flex', justifyContent: 'center', marginTop: 8 }}>
                 <button
+                  className="scroll-indicator-btn"
                   onClick={() => {
                     const el = document.querySelector('.home-projects-preview');
                     if (el) el.scrollIntoView({ behavior: 'smooth' });
                   }}
-                  style={{
-                    background: 'none',
-                    border: 'none',
-                    cursor: 'pointer',
-                    outline: 'none',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    color: '#000',
-                  }}
                   aria-label="Scroll to Featured Projects"
                 >
                   <span style={{ fontSize: 18, fontWeight: 500, marginBottom: 2 }}>Featured Projects</span>
-                  <span
-                    style={{
-                      display: 'inline-block',
-                      animation: 'bounceDown 1.2s infinite',
-                      fontSize: 16,
-                      marginTop: 2,
-                    }}
-                  >
+                  <span className="chevron-bounce">
                     <FaChevronDown />
                   </span>
                 </button>
-                <style>{`
-                  @keyframes bounceDown {
-                    0%, 100% { transform: translateY(0); }
-                    50% { transform: translateY(12px); }
-                  }
-                `}</style>
               </div>
 
 
