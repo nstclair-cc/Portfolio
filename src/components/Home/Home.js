@@ -48,7 +48,7 @@ function Home() {
               </div>
 
               {/* Scroll to Featured Projects indicator */}
-              <div style={{ display: 'flex', justifyContent: 'center', marginTop: 16 }}>
+              <div style={{ display: 'flex', justifyContent: 'center', marginTop: 8 }}>
                 <button
                   onClick={() => {
                     const el = document.querySelector('.home-projects-preview');
@@ -66,12 +66,12 @@ function Home() {
                   }}
                   aria-label="Scroll to Featured Projects"
                 >
-                  <span style={{ fontSize: 22, fontWeight: 500, marginBottom: 2 }}>Featured Projects</span>
+                  <span style={{ fontSize: 18, fontWeight: 500, marginBottom: 2 }}>Featured Projects</span>
                   <span
                     style={{
                       display: 'inline-block',
                       animation: 'bounceDown 1.2s infinite',
-                      fontSize: 32,
+                      fontSize: 16,
                       marginTop: 2,
                     }}
                   >

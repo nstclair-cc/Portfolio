@@ -364,6 +364,13 @@ button:focus {
   .Typewriter__cursor {
     display: none !important;
   }
+  .heading,
+  .heading-name {
+    font-size: 1em !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    text-align: left !important;
+  }
 }
 
 .myAvtar {
@@ -811,8 +818,8 @@ button:focus {
 }
 
 .like-btn:hover {
-  transform: translateY(-2px) !important;
-  background-color: #333 !important;
+  margin-top: 90px !important;
+  margin-bottom: 40px;
   border-color: #333 !important;
 }
 
