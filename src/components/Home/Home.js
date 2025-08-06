@@ -1,5 +1,6 @@
 
 import React from "react";
+import { FaChevronDown } from "react-icons/fa";
 import { projects } from "../Projects/Projects";
 import ProjectCard from "../Projects/ProjectCards";
 import { Button } from "react-bootstrap";
@@ -34,18 +35,58 @@ function Home() {
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hello!{" "}
-              </h1>
-
-              <h1 className="heading-name">
-                My name is
-                <strong className="main-name"> Natalya St. Clair.</strong>
-              </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
-                <FadeType />
+                <h1 style={{ paddingBottom: 15 }} className="heading">
+                Hello! My name is Natalya St. Clair.
+              </h1>
+              <h1 className="heading-name">
+                I am a <b>UX researcher</b> and product thinker who translates complex ideas into intuitive, visual tools.
+                </h1>
+
+              <h1 className="heading"><br />I design and build experiences that help people think more clearly—especially in education, data, and research.</h1>
               </div>
+
+              {/* Scroll to Featured Projects indicator */}
+              <div style={{ display: 'flex', justifyContent: 'center', marginTop: 16 }}>
+                <button
+                  onClick={() => {
+                    const el = document.querySelector('.home-projects-preview');
+                    if (el) el.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    cursor: 'pointer',
+                    outline: 'none',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    color: '#000',
+                  }}
+                  aria-label="Scroll to Featured Projects"
+                >
+                  <span style={{ fontSize: 22, fontWeight: 500, marginBottom: 2 }}>Featured Projects</span>
+                  <span
+                    style={{
+                      display: 'inline-block',
+                      animation: 'bounceDown 1.2s infinite',
+                      fontSize: 32,
+                      marginTop: 2,
+                    }}
+                  >
+                    <FaChevronDown />
+                  </span>
+                </button>
+                <style>{`
+                  @keyframes bounceDown {
+                    0%, 100% { transform: translateY(0); }
+                    50% { transform: translateY(12px); }
+                  }
+                `}</style>
+              </div>
+
+
             </Col>
             <Col
               md={5}
@@ -337,7 +378,7 @@ function Home() {
           `}</style>
         </div>
       )}
-      <div data-aos="fade-up">
+      <div>
         <Home2 />
       </div>
     </section>
