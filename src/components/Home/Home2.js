@@ -17,7 +17,7 @@ function Home2() {
               <h1 style={{ fontSize: "2.6em" }}>
                 LET ME <span className="purple"> INTRODUCE </span> MYSELF
               </h1>
-              <p className="home-about-body text-center">
+              <p className="home-about-body">
                 I design and build tools in tech that help people think more clearly—especially in education, data, and research.
                 <br />
                 <br />
