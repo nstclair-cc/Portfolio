@@ -50,6 +50,7 @@ export const projects = [
     description:
       "As first author on an award-winning study, I examined how data experts explore unfamiliar datasets. We identified hands-on strategies that can guide the design of tools to help students make sense of complex data.",
     demoLink: "https://doi.org/10.22318/icls2024.613673",
+    driveLink: "https://drive.google.com/file/d/1TGmCmVqtPKryMxVXh-NTAGAhwpQ_4J6Y/view?usp=sharing",
     modalContent: <MultiDataModalContent />, 
   },
   {
