@@ -5,12 +5,10 @@ import { DiGoogleDrive } from "react-icons/di";
 import { IoMdClose } from "react-icons/io";
 
 import React from "react";
-import Tilt from "react-parallax-tilt";
 import { Container, Row, Col } from "react-bootstrap";
-// import Particle from "../Particle";
 import Home2 from "./Home2";
 import FadeType from "./FadeType";
-import womanComputer from "../../Assets/avatar.png";
+import womanComputer from "../../Assets/avatar.jpg";
 
 
 function Home() {
@@ -31,20 +29,16 @@ function Home() {
   return (
     <section>
       <Container fluid className="home-section" id="home">
-        {/* <Particle /> */}
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
-                <span className="wave" role="img" aria-labelledby="wave">
-                  👋🏻
-                </span>
+                Hello!{" "}
               </h1>
 
               <h1 className="heading-name">
-                I'M
-                <strong className="main-name"> NATALYA ST. CLAIR</strong>
+                My name is
+                <strong className="main-name"> Natalya St. Clair</strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
@@ -56,7 +50,6 @@ function Home() {
               className="home-image-col"
               style={{ display: "flex", alignItems: "center", justifyContent: "center" }}
             >
-              <Tilt>
                 <img
                   src={womanComputer}
                   alt="woman at computer"
@@ -69,7 +62,6 @@ function Home() {
                   transition: "transform 0.2s"
                 }}
               />
-              </Tilt>
             </Col>
           </Row>
         </Container>
