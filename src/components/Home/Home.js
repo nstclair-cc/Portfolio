@@ -47,6 +47,22 @@ function Home() {
               <h1 className="heading"><br />I design and build experiences that help people think more clearly—especially in education, data, and research.</h1>
               </div>
 
+              {/* Scroll to Featured Projects indicator */}
+              <div style={{ display: 'flex', justifyContent: 'center', marginTop: 8 }}>
+                <button
+                  className="scroll-indicator-btn"
+                  onClick={() => {
+                    const el = document.querySelector('.home-projects-preview');
+                    if (el) el.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  aria-label="Scroll to Featured Projects"
+                >
+                  <span style={{ fontSize: 18, fontWeight: 500, marginBottom: 2 }}>Featured Projects</span>
+                  <span className="chevron-bounce">
+                    <FaChevronDown />
+                  </span>
+                </button>
+              </div>
 
 
             </Col>
@@ -69,6 +85,51 @@ function Home() {
             </Col>
           </Row>
         </Container>
+      </Container>
+      {/* Featured Projects Preview */}
+      <Container className="home-projects-preview" style={{ marginTop: 40, marginBottom: 40 }}>
+        <h2 style={{ fontWeight: 700, fontSize: 32, marginBottom: 24 }} data-aos="fade-up">Featured Projects</h2>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          {projects.slice(0, 6).map((project, idx) => (
+            <Col md={4} className="project-card" key={project.title + "-preview-" + idx}>
+              <ProjectCard
+                {...project}
+                onOpenModal={() => handleProjectClick(project)}
+                renderImage={() => (
+                  <img
+                    src={project.imgPath}
+                    alt={project.title}
+                    onClick={e => {
+                      e.stopPropagation();
+                      handleProjectClick(project);
+                    }}
+                    style={{ cursor: 'pointer', width: '100%', borderRadius: 8, marginBottom: 0 }}
+                  />
+                )}
+                renderTitle={() => (
+                  <h2
+                    onClick={e => {
+                      e.stopPropagation();
+                      handleProjectClick(project);
+                    }}
+                    style={{ cursor: 'pointer', marginBottom: 8 }}
+                  >
+                    {project.title}
+                  </h2>
+                )}
+              />
+            </Col>
+          ))}
+        </Row>
+        <div style={{ display: 'flex', justifyContent: 'center', marginTop: 24 }}>
+          <a href="/project" style={{ textDecoration: 'none' }}>
+            <button
+              className="explore-projects-btn"
+            >
+              Explore more projects
+            </button>
+          </a>
+        </div>
       </Container>
       {/* Modal overlay for project details (copied from Projects.js) */}
       {selectedProject && (
