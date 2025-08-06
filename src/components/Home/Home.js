@@ -47,23 +47,6 @@ function Home() {
               <h1 className="heading"><br />I design and build experiences that help people think more clearly—especially in education, data, and research.</h1>
               </div>
 
-              {/* Scroll to Featured Projects indicator */}
-              <div style={{ display: 'flex', justifyContent: 'center', marginTop: 8 }}>
-                <button
-                  className="scroll-indicator-btn"
-                  onClick={() => {
-                    const el = document.querySelector('.home-projects-preview');
-                    if (el) el.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                  aria-label="Scroll to Featured Projects"
-                >
-                  <span style={{ fontSize: 18, fontWeight: 500, marginBottom: 2 }}>Featured Projects</span>
-                  <span className="chevron-bounce">
-                    <FaChevronDown />
-                  </span>
-                </button>
-              </div>
-
 
             </Col>
             <Col
