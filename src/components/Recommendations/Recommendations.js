@@ -33,7 +33,12 @@ function Recommendations() {
   return (
     <Container fluid className="home-section" style={{ minHeight: "100vh", background: "#f5f5f6", paddingTop: 40, paddingBottom: 40 }}>
       <Container>
-        <h1 className="project-heading" style={{ marginBottom: 32 }}>Recommendations</h1>
+        <h1 className="project-heading" style={{ marginBottom: 8 }}>Recommendations</h1>
+        {isMobile && (
+          <div style={{ color: '#666', fontSize: 15, marginBottom: 24, textAlign: 'center' }}>
+            <span role="img" aria-label="swipe">👉</span> Swipe to view more recommendations
+          </div>
+        )}
         {isMobile ? (
           <div style={{ position: "relative", width: "100%" }}>
             <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
