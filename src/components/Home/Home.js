@@ -58,7 +58,6 @@ function Home() {
                   maxHeight: "400px",
                   width: "100%",
                   objectFit: "contain",
-                  transform: "scale(0.9)",
                   transition: "transform 0.2s"
                 }}
               />
