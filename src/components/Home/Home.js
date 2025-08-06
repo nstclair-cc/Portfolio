@@ -1,21 +1,23 @@
+
+import React from "react";
 import { projects } from "../Projects/Projects";
 import ProjectCard from "../Projects/ProjectCards";
 import { Button } from "react-bootstrap";
 import { DiGoogleDrive } from "react-icons/di";
 import { IoMdClose } from "react-icons/io";
-
-import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Home2 from "./Home2";
 import FadeType from "./FadeType";
 import womanComputer from "../../Assets/avatar.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 function Home() {
   const [selectedProject, setSelectedProject] = React.useState(null);
-
-  // AOS removed for mobile compatibility
-
+  React.useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
   // Helper to open modal with project details
   const handleProjectClick = (project) => {
     setSelectedProject({ ...project });
@@ -38,7 +40,7 @@ function Home() {
 
               <h1 className="heading-name">
                 My name is
-                <strong className="main-name"> Natalya St. Clair</strong>
+                <strong className="main-name"> Natalya St. Clair.</strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
@@ -67,7 +69,7 @@ function Home() {
       </Container>
       {/* Featured Projects Preview */}
       <Container className="home-projects-preview" style={{ marginTop: 40, marginBottom: 40 }}>
-        <h2 style={{ fontWeight: 700, fontSize: 32, marginBottom: 24 }}>Featured Projects</h2>
+        <h2 style={{ fontWeight: 700, fontSize: 32, marginBottom: 24 }} data-aos="fade-up">Featured Projects</h2>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           {projects.slice(0, 6).map((project, idx) => (
             <Col md={4} className="project-card" key={project.title + "-preview-" + idx}>

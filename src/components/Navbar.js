@@ -14,10 +14,16 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+
+  React.useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
