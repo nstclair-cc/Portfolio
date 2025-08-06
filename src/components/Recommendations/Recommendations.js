@@ -57,16 +57,18 @@ function Recommendations() {
                         <div style={{ color: "#555", fontSize: 15 }}>{rec.jobTitle}</div>
                         <div style={{ color: "#888", fontSize: 15 }}>{rec.organization}</div>
                         <div style={{ marginTop: 16 }}>
-                          <Button
-                            variant="primary"
-                            href={rec.linkedin}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style={{ marginRight: rec.website ? 12 : 0 }}
-                          >
-                            <FaLinkedin style={{ marginRight: 6, verticalAlign: "middle" }} />
-                            LinkedIn
-                          </Button>
+                          {rec.linkedin && (
+                            <Button
+                              variant="primary"
+                              href={rec.linkedin}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              style={{ marginRight: rec.website ? 12 : 0 }}
+                            >
+                              <FaLinkedin style={{ marginRight: 6, verticalAlign: "middle" }} />
+                              LinkedIn
+                            </Button>
+                          )}
                           {rec.website && (
                             <Button
                               variant="secondary"
@@ -121,19 +123,21 @@ function Recommendations() {
                   <div style={{ color: "#555", fontSize: 15 }}>{rec.jobTitle}</div>
                   <div style={{ color: "#888", fontSize: 15 }}>{rec.organization}</div>
                   <div style={{ marginTop: 16 }}>
-                    <Button
-                      variant="primary"
-                      href={rec.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      style={{ marginRight: rec.website ? 12 : 0 }}
-                    >
-                      <FaLinkedin style={{ marginRight: 6, verticalAlign: "middle" }} />
-                      LinkedIn
-                    </Button>
+                    {rec.linkedin && (
+                      <Button
+                        variant="primary"
+                        href={rec.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ marginRight: rec.website ? 12 : 0 }}
+                      >
+                        <FaLinkedin style={{ marginRight: 6, verticalAlign: "middle" }} />
+                        LinkedIn
+                      </Button>
+                    )}
                     {rec.website && (
                       <Button
-                        variant="secondary"
+                        variant="dark"
                         href={rec.website}
                         target="_blank"
                         rel="noopener noreferrer"

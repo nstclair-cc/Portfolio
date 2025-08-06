@@ -1,4 +1,3 @@
-// Example recommendations data structure
 // Add more entries as needed
 const recommendations = [
   {
@@ -45,6 +44,15 @@ const recommendations = [
     linkedin: "https://www.linkedin.com/in/michaeltirenin/",
     organization: "The Concord Consortium",
     // no website for this entry
+  },
+  {
+    name: "Rebecca Ellis",
+    photo: require("../../Assets/colleagues/rebecca-ellis.jpg"),
+    quote: "Talya is an outstanding collaborator and is someone I trust. She knows where to find answers, responds quickly, and always follows through with her promises… Talking with her is always a bright spot in my day.",
+    jobTitle: "Curriculum Developer",
+    // no linkedin for this entry
+    organization: "The Concord Consortium",
+    website: "https://concord.org/about/staff/rebecca-ellis/"
   }
 ];
 
