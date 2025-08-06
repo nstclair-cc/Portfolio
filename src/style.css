@@ -699,7 +699,6 @@ button:focus {
   border-radius: 5px !important;
   box-shadow: 4px 5px 4px 3px #eee !important;
   overflow: hidden !important;
-  transition: all 0.4s ease 0s !important;
   display: flex !important;
   flex-direction: column;
   align-items: center;
@@ -715,11 +714,6 @@ button:focus {
   }
 }
 
-.tech-icons:hover {
-  transform: scale(1.05) !important;
-  overflow: hidden !important;
-  border: 2.2px solid !important;
-}
 .tech-icon-images {
   padding: 20px !important;
   line-height: 1.6 !important;
