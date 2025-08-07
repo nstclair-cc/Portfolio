@@ -6,11 +6,13 @@ import logo from "../Assets/logo-Nc.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
+
 import {
   AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
+  AiOutlineComment,
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
@@ -94,6 +96,16 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/recommendations"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineComment style={{ marginBottom: "2px" }} /> Recommendations
               </Nav.Link>
             </Nav.Item>
 

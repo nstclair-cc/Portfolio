@@ -342,6 +342,14 @@ function Home() {
       <div>
         <Home2 />
       </div>
+               {/* View Recommendations button below Home2 */}
+            <div style={{ display: 'flex', justifyContent: 'center', marginTop: 32, marginBottom: 48 }}>
+              <a href="/recommendations" style={{ textDecoration: 'none' }}>
+                <button className="explore-projects-btn">
+                  View Recommendations
+                </button>
+              </a>
+            </div>
     </section>
   );
 }

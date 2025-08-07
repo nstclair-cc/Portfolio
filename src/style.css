@@ -68,6 +68,7 @@
   font-style: italic;
   color: #222;
   margin: 32px 0 0 0;
+  text-align: left;
 }
 .recommendations-quote-col {
   padding: 32px;
@@ -112,6 +113,26 @@
 }
 .card-text {
   text-align: left !important;
+}
+/* Swipe animation for recommendations cards on mobile */
+@media (max-width: 767px) {
+  .recommendations-card.swipe-in {
+    animation: recommendations-swipe-in 0.45s cubic-bezier(.4,1.6,.6,1);
+  }
+  @keyframes recommendations-swipe-in {
+    0% {
+      opacity: 0;
+      transform: translateX(60vw);
+    }
+    80% {
+      opacity: 1;
+      transform: translateX(-2vw);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 }
 /* Featured Projects scroll indicator styles */
 .home-projects-preview {
