@@ -31,19 +31,19 @@ function Recommendations() {
   };
 
   return (
-    <Container fluid className="home-section" style={{ minHeight: "100vh", background: "#f5f5f6", paddingTop: 40, paddingBottom: 40 }}>
+    <Container fluid className="home-section recommendations-section">
       <Container>
-        <h1 className="project-heading" style={{ marginBottom: 8 }}>Recommendations</h1>
+        <h1 className="project-heading recommendations-heading">Recommendations</h1>
         {isMobile && (
-          <div style={{ color: '#666', fontSize: 15, marginBottom: 24, textAlign: 'center' }}>
+          <div className="recommendations-mobile-tip">
             <span role="img" aria-label="swipe">👉</span> Swipe to view more recommendations
           </div>
         )}
         {isMobile ? (
-          <div style={{ position: "relative", width: "100%" }}>
-            <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <div className="recommendations-mobile-wrapper">
+            <div className="recommendations-mobile-center">
               <div
-                style={{ width: "100%" }}
+                className="recommendations-mobile-touch"
                 onTouchStart={handleTouchStart}
                 onTouchEnd={handleTouchEnd}
               >
@@ -51,17 +51,17 @@ function Recommendations() {
                 {(() => {
                   const rec = recommendations[currentIdx];
                   return (
-                    <Row key={rec.name + currentIdx} className="align-items-center mb-5" style={{ background: "#f5f5f6", borderRadius: 16, boxShadow: "0 2px 16px #eee", padding: 0, marginBottom: 32 }}>
-                      <Col xs={12} style={{ textAlign: "center", padding: 32 }}>
+                    <Row key={rec.name + currentIdx} className="align-items-center mb-5 recommendations-card">
+                      <Col xs={12} className="recommendations-photo-col">
                         <img
                           src={rec.photo}
                           alt={rec.name}
-                          style={{ width: "100%", maxWidth: 220, borderRadius: "50%", objectFit: "cover", boxShadow: "0 2px 12px #ccc" }}
+                          className="recommendations-photo"
                         />
-                        <div style={{ marginTop: 16, fontWeight: 600, fontSize: 18 }}>{rec.name}</div>
-                        <div style={{ color: "#555", fontSize: 15 }}>{rec.jobTitle}</div>
-                        <div style={{ color: "#888", fontSize: 15 }}>{rec.organization}</div>
-                        <div style={{ marginTop: 16 }}>
+                        <div className="recommendations-name">{rec.name}</div>
+                        <div className="recommendations-jobtitle">{rec.jobTitle}</div>
+                        <div className="recommendations-org">{rec.organization}</div>
+                        <div className="recommendations-links">
                           {rec.linkedin && (
                             <Button
                               variant="primary"
@@ -86,7 +86,7 @@ function Recommendations() {
                             </Button>
                           )}
                         </div>
-                        <blockquote style={{ fontSize: isMobile ? 15 : 20, fontStyle: "italic", color: "#222", margin: "32px 0 0 0" }}>
+                        <blockquote className="recommendations-quote-mobile">
                           “{rec.quote.split('\n').map((line, idx, arr) => (
                             <span key={idx}>
                               {line.trim()}
@@ -100,16 +100,9 @@ function Recommendations() {
                 })()}
               </div>
             </div>
-            <div style={{ textAlign: "center", marginTop: 12 }}>
+            <div className="recommendations-dot-row">
               {recommendations.map((_, i) => (
-                <span key={i} style={{
-                  display: "inline-block",
-                  width: "12px",
-                  height: "12px",
-                  borderRadius: "50%",
-                  background: i === currentIdx ? "#111" : "#444",
-                  margin: 4
-                }} />
+                <span key={i} className={`recommendations-dot${i === currentIdx ? ' active' : ''}`} />
               ))}
             </div>
           </div>
@@ -117,17 +110,17 @@ function Recommendations() {
           recommendations.map((rec, idx) => {
             const isEven = idx % 2 === 0;
             return (
-              <Row key={rec.name + idx} className="align-items-center mb-5" style={{ background: "#f5f5f6", borderRadius: 16, boxShadow: "0 2px 16px #eee", padding: 0, marginBottom: 32, flexDirection: isEven ? undefined : 'row-reverse' }}>
-                <Col xs={12} md={4} style={{ textAlign: "center", padding: 32 }}>
+              <Row key={rec.name + idx} className={`align-items-center mb-5 recommendations-card${isEven ? '' : ' reverse'}`}>
+                <Col xs={12} md={4} className="recommendations-photo-col">
                   <img
                     src={rec.photo}
                     alt={rec.name}
-                    style={{ width: "100%", maxWidth: 220, borderRadius: "50%", objectFit: "cover", boxShadow: "0 2px 12px #ccc" }}
+                    className="recommendations-photo"
                   />
-                  <div style={{ marginTop: 16, fontWeight: 600, fontSize: 18 }}>{rec.name}</div>
-                  <div style={{ color: "#555", fontSize: 15 }}>{rec.jobTitle}</div>
-                  <div style={{ color: "#888", fontSize: 15 }}>{rec.organization}</div>
-                  <div style={{ marginTop: 16 }}>
+                  <div className="recommendations-name">{rec.name}</div>
+                  <div className="recommendations-jobtitle">{rec.jobTitle}</div>
+                  <div className="recommendations-org">{rec.organization}</div>
+                  <div className="recommendations-links">
                     {rec.linkedin && (
                       <Button
                         variant="primary"
@@ -153,8 +146,8 @@ function Recommendations() {
                     )}
                   </div>
                 </Col>
-                <Col xs={12} md={8} style={{ padding: 32, textAlign: "left" }}>
-                  <blockquote style={{ fontSize: 20, fontStyle: "italic", color: "#222", marginBottom: 0 }}>
+                <Col xs={12} md={8} className="recommendations-quote-col">
+                  <blockquote className="recommendations-quote">
                     “{rec.quote.split('\n').map((line, idx, arr) => (
                       <span key={idx}>
                         {line.trim()}

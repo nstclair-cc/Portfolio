@@ -228,22 +228,22 @@ function Projects() {
                   </button>
                 </div>
                 {/* Removed white gradient overlay for right side readability */}
-            <img
-              src={selectedProject.imgPath}
-              alt={selectedProject.title ? selectedProject.title : "Project image"}
-              style={{
-                width: "100%",
-                maxWidth: "800px",
-                maxHeight: "500px",
-                borderRadius: 8,
-                marginBottom: 16,
-                paddingTop: 32,
-                objectFit: "contain",
-                display: "block",
-                marginLeft: "auto",
-                marginRight: "auto"
-              }}
-            />
+                <img
+                  src={selectedProject.imgPath}
+                  alt={selectedProject.title ? selectedProject.title : "Project image"}
+                  style={{
+                    width: "100%",
+                    maxWidth: "800px",
+                    maxHeight: "500px",
+                    borderRadius: 8,
+                    marginBottom: 16,
+                    paddingTop: 32,
+                    objectFit: "contain",
+                    display: "block",
+                    marginLeft: "auto",
+                    marginRight: "auto"
+                  }}
+                />
                 <div style={{ marginBottom: 16 }}>
                   {selectedProject.modalContent ? selectedProject.modalContent : selectedProject.description}
                 </div>
@@ -331,53 +331,53 @@ function Projects() {
                 }
                 /* Apple-style sticky close button wrapper */
                 .modal-close-btn-wrapper {
-                    background-attachment: scroll;
-                    position: sticky;
-                    top: -24px;
-                    z-index: 9999;
-                    width: 140px;
-                    height: 0;
-                    display: flex;
-                    align-items: flex-start;
-                    justify-content: flex-end;
-                    margin-left: auto;
-                    margin-right: -36px;
-                    pointer-events: none;
+                  background-attachment: scroll;
+                  position: sticky;
+                  top: -24px;
+                  z-index: 9999;
+                  width: 140px;
+                  height: 0;
+                  display: flex;
+                  align-items: flex-start;
+                  justify-content: flex-end;
+                  margin-left: auto;
+                  margin-right: -36px;
+                  pointer-events: none;
                 }
-              .modal-close-btn {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              background-attachment: scroll;
-              width: 22px;
-              height: 22px;
-              min-width: 22px;
-              min-height: 22px;
-              margin-top: 0;
-              margin-right: 0;
-              background: #000;
-              border: none;
-              color: #f5f5f6;
-              font-size: 16px;
-              font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
-              font-weight: 400;
-              line-height: 1;
-              letter-spacing: -0.374px;
-              border-radius: 50%;
-              aspect-ratio: 1 / 1;
-              box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-              cursor: pointer;
-              pointer-events: auto;
-              box-sizing: border-box;
-              -webkit-font-smoothing: antialiased;
-              transition: background 0.2s, box-shadow 0.2s;
-              padding: 0;
-            }
-            .modal-close-btn:hover, .modal-close-btn:focus {
-              background: #f2f2f2;
-              box-shadow: 0 4px 16px rgba(0,0,0,0.16);
-              outline: none;
-            }
+                .modal-close-btn {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background-attachment: scroll;
+                  width: 22px;
+                  height: 22px;
+                  min-width: 22px;
+                  min-height: 22px;
+                  margin-top: 0;
+                  margin-right: 0;
+                  background: #000;
+                  border: none;
+                  color: #f5f5f6;
+                  font-size: 16px;
+                  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                  font-weight: 400;
+                  line-height: 1;
+                  letter-spacing: -0.374px;
+                  border-radius: 50%;
+                  aspect-ratio: 1 / 1;
+                  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+                  cursor: pointer;
+                  pointer-events: auto;
+                  box-sizing: border-box;
+                  -webkit-font-smoothing: antialiased;
+                  transition: background 0.2s, box-shadow 0.2s;
+                  padding: 0;
+                }
+                .modal-close-btn:hover, .modal-close-btn:focus {
+                  background: #f2f2f2;
+                  box-shadow: 0 4px 16px rgba(0,0,0,0.16);
+                  outline: none;
+                }
                 @media (max-width: 767px) {
                   .modal-overlay {
                     align-items: stretch;
