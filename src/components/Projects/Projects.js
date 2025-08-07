@@ -399,14 +399,15 @@ function Projects() {
                     overflow-y: auto !important;
                   }
                   .modal-close-btn-wrapper {
-                    top: -8px;
-                    right: -32px;
-                    width: 120px;
-                    margin-right: -32px;
+                    position: absolute !important;
+                    top: 12px !important;
+                    right: 12px !important;
+                    width: auto !important;
+                    margin: 0 !important;
+                    z-index: 10000 !important;
                   }
                   .modal-close-btn {
-                    margin-top: -8px;
-                    margin-right: -8px;
+                    margin: 0 !important;
                   }
                 }
               `}</style>
