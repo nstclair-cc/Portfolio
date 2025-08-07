@@ -74,10 +74,25 @@
   text-align: left;
 }
 .recommendations-quote {
-  font-size: 20px;
-  font-style: italic;
-  color: #222;
+  font-size: 1.5em;
+  color: #000;
   margin-bottom: 0;
+  padding-left: 50px;
+}
+@media (max-width: 767px) {
+  .recommendations-quote {
+    font-size: 20px;
+    color: #222;
+    font-style: italic;
+    padding-left: 0;
+  }
+}
+@media (max-width: 767px) {
+  .recommendations-quote {
+    font-size: 20px;
+    color: #222;
+    padding-left: 0;
+  }
 }
 .recommendations-dot-row {
   text-align: center;
