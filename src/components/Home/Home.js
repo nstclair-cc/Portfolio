@@ -1,6 +1,5 @@
 
 import React from "react";
-import { FaChevronDown } from "react-icons/fa";
 import { projects } from "../Projects/Projects";
 import ProjectCard from "../Projects/ProjectCards";
 import { Button } from "react-bootstrap";
@@ -8,7 +7,6 @@ import { DiGoogleDrive } from "react-icons/di";
 import { IoMdClose } from "react-icons/io";
 import { Container, Row, Col } from "react-bootstrap";
 import Home2 from "./Home2";
-import FadeType from "./FadeType";
 import womanComputer from "../../Assets/avatar.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";

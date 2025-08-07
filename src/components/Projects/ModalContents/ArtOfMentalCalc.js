@@ -17,7 +17,7 @@ const MentalCalcModalContent = () => (
 
     <h4 style={headingStyles.h4}>Project Overview</h4>
       <p>
-      I illustrated and co-authored a 40-lesson mental math curriculum with Dr. Arthur Benjamin—work that later evolved into two <strong>New York Times bestselling books</strong>, <em><a href="https://a.co/d/1NnntYn" target="_blank">The Magic of Math</a></em> and <em><a href="https://a.co/d/d0BQU0w" target="_blank">Secrets of Mental Math</a></em>. This project combined my dual background in mathematics and illustration to make abstract arithmetic concepts more visual, memorable, and fun.
+      I illustrated and co-authored a 40-lesson mental math curriculum with Dr. Arthur Benjamin—work that later evolved into two <strong>New York Times bestselling books</strong>, <em><a href="https://a.co/d/1NnntYn" target="_blank" rel="noreferrer">The Magic of Math</a></em> and <em><a href="https://a.co/d/d0BQU0w" target="_blank" rel="noreferrer">Secrets of Mental Math</a></em>. This project combined my dual background in mathematics and illustration to make abstract arithmetic concepts more visual, memorable, and fun.
       </p>
       <p>
       What began as a college collaboration turned into a long-term creative partnership. I designed hundreds of custom diagrams, typeset full chapters in LaTeX, and helped shape a consistent visual voice across curriculum and trade books. The end result: a reusable visual system that continues to support learners of all ages.

@@ -20,7 +20,7 @@ const AudioTranscriberModalContent = () => (
       As part of a research initiative analyzing hundreds of hours of classroom video data, I led the development of an internal audio transcription system. Working with a tight budget, strict privacy requirements, and a massive dataset, we needed a fast and secure way to turn audio into searchable text — without sending sensitive student data to the cloud.
     </p>
     <p>
-      I initiated and led the project, working closely with a senior developer (<a href="https://goldowsky.com/boris/" target="_blank">Boris</a>) to build the first working prototype using Google’s Speech-to-Text API, then iterating toward a local pipeline using FasterWhisper. The tool ultimately automated a previously manual transcription workflow and unlocked massive time savings for our qualitative research team.
+      I initiated and led the project, working closely with a senior developer (<a href="https://goldowsky.com/boris/" target="_blank" rel="noreferrer">Boris</a>) to build the first working prototype using Google’s Speech-to-Text API, then iterating toward a local pipeline using FasterWhisper. The tool ultimately automated a previously manual transcription workflow and unlocked massive time savings for our qualitative research team.
     </p>
 
     <h4 style={headingStyles.h4}>Problem Statement</h4>
