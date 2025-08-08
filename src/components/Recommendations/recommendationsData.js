@@ -22,7 +22,7 @@ const recommendations = [
     name: "Cynthia McIntyre",
     photo: require("../../Assets/colleagues/cynthia-mcintyre.jpeg"),
     quote: "Natalya is truly one of the most dependable and thoughtful colleagues I have worked with. I recommend her wholeheartedly and without reservation. She will be an exceptional asset to any team fortunate enough to work with her.",
-    jobTitle: "Director of Research",
+    jobTitle: "Director of Communications",
     linkedin: "https://www.linkedin.com/in/cynthia-mcintyre/",
     organization: "The Concord Consortium",
     // no website for this entry
