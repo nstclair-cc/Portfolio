@@ -54,6 +54,15 @@ export const projects = [
     modalContent: <MultiDataModalContent />, 
   },
   {
+    imgPath: straightLine,
+    isBlog: false,
+    title: "But is it supposed to be a straight line?",
+    description:
+      "Students using classroom sensor tools often struggled to interpret noisy graph data. I led UX research to uncover where interactions broke down and proposed design changes to support graph literacy and smoother analysis.",
+    demoLink: "http://dx.doi.org/10.1080/09500693.2023.2260064",
+    modalContent: <StraightLine />, 
+  },
+  {
     imgPath: mentalCalc,
     isBlog: false,
     bannerText: "NYT Bestselling Books",
@@ -62,15 +71,6 @@ export const projects = [
       "I illustrated two New York Times bestselling books that make mental math more visual and approachable. Using playful diagrams and clear layouts, I helped turn Dr. Benjamin’s techniques into an intuitive and fun learning experience.",
     demoLink: "https://www.amazon.com/dp/1495219968",
     modalContent: <ArtOfMentalCalc />, 
-  },
-    {
-    imgPath: straightLine,
-    isBlog: false,
-    title: "But is it supposed to be a straight line?",
-    description:
-      "Students using classroom sensor tools often struggled to interpret noisy graph data. I led UX research to uncover where interactions broke down and proposed design changes to support graph literacy and smoother analysis.",
-    demoLink: "http://dx.doi.org/10.1080/09500693.2023.2260064",
-    modalContent: <StraightLine />, 
   },
   {
     imgPath: codapCypress,
