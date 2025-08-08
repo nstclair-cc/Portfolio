@@ -6,7 +6,7 @@ function AboutCard() {
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
-            <p style={{ textAlign: "justify" }}>
+            <p className="aboutcard-left-align">
               Hi! I'm <span className="purple">Natalya St. Clair</span>, a UX researcher, educator, and problem-solver based in the <span className="purple">East Bay Area of San Francisco</span>.
               <br /><br />
               I earned my Master's in Education Technology from Harvard and a Bachelor's in Mathematics and Studio Art from Scripps College. But beyond degrees and job titles, I'm someone who’s always been drawn to the intersection of creativity, logic, and meaningful connection.

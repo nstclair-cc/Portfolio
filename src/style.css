@@ -1,3 +1,7 @@
+/* AboutCard left-align paragraph */
+.aboutcard-left-align {
+  text-align: left !important;
+}
 /* Recommendations Section Styles */
 .recommendations-section {
   min-height: 100vh;
