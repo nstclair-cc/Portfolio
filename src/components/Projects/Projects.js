@@ -33,16 +33,6 @@ import documentationImage from "../../Assets/Projects/internal-documentation.svg
 // ...existing code...
 export const projects = [
     {
-    imgPath: starryNight,
-    isBlog: false,
-    bannerText: "9.5 Million+ Views",
-    title: "TED-Ed",
-    description:
-      "Many students see math as disconnected from creativity. I wrote scripts for three TED-Ed videos that reveal its role in art, music, and literature, crafting clear, engaging stories that make abstract ideas feel intuitive.",
-    demoLink: "https://ed.ted.com/lessons/the-unexpected-math-behind-van-gogh-s-starry-night-natalya-st-clair",
-    modalContent: <TEDEdLesson />, 
-  },
-    {
     imgPath: multiData,
     isBlog: false,
     title: "Navigating Multidimensional Data Structures",
@@ -63,14 +53,13 @@ export const projects = [
     modalContent: <StraightLine />, 
   },
   {
-    imgPath: mentalCalc,
+    imgPath: audioTranscriber,
     isBlog: false,
-    bannerText: "NYT Bestselling Books",
-    title: "The Art of Mental Calculation",
+    title: "Audio Transcriber",
     description:
-      "I illustrated two New York Times bestselling books that make mental math more visual and approachable. Using playful diagrams and clear layouts, I helped turn Dr. Benjamin’s techniques into an intuitive and fun learning experience.",
-    demoLink: "https://www.amazon.com/dp/1495219968",
-    modalContent: <ArtOfMentalCalc />, 
+      "To meet strict student privacy requirements, I built a Python toolkit for transcribing classroom video without sending data to the cloud. The tool supports real-time and offline use, making secure, scalable transcription possible for research teams.",
+    ghLink: "https://github.com/concord-consortium/audio-transcriber",
+    modalContent: <AudioTranscriber />, 
   },
   {
     imgPath: codapCypress,
@@ -82,13 +71,24 @@ export const projects = [
     modalContent: <AutomationPixiJS />, 
   },
   {
-    imgPath: audioTranscriber,
+    imgPath: starryNight,
     isBlog: false,
-    title: "Audio Transcriber",
+    bannerText: "9.5 Million+ Views",
+    title: "TED-Ed",
     description:
-      "To meet strict student privacy requirements, I built a Python toolkit for transcribing classroom video without sending data to the cloud. The tool supports real-time and offline use, making secure, scalable transcription possible for research teams.",
-    ghLink: "https://github.com/concord-consortium/audio-transcriber",
-    modalContent: <AudioTranscriber />, 
+      "Many students see math as disconnected from creativity. I wrote scripts for three TED-Ed videos that reveal its role in art, music, and literature, crafting clear, engaging stories that make abstract ideas feel intuitive.",
+    demoLink: "https://ed.ted.com/lessons/the-unexpected-math-behind-van-gogh-s-starry-night-natalya-st-clair",
+    modalContent: <TEDEdLesson />, 
+  },
+  {
+    imgPath: mentalCalc,
+    isBlog: false,
+    bannerText: "NYT Bestselling Books",
+    title: "The Art of Mental Calculation",
+    description:
+      "I illustrated two New York Times bestselling books that make mental math more visual and approachable. Using playful diagrams and clear layouts, I helped turn Dr. Benjamin’s techniques into an intuitive and fun learning experience.",
+    demoLink: "https://www.amazon.com/dp/1495219968",
+    modalContent: <ArtOfMentalCalc />, 
   },
   {
     imgPath: codap,
