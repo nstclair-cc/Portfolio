@@ -36,7 +36,7 @@ export const projects = [
     imgPath: multiData,
     isBlog: false,
     title: "Navigating Multidimensional Data Structures",
-    bannerText: "Best Long Paper Award",
+    bannerText: "ICLS Award",
     description:
       "As first author on an award-winning study, I examined how data experts explore unfamiliar datasets. We identified hands-on strategies that can guide the design of tools to help students make sense of complex data.",
     demoLink: "https://doi.org/10.22318/icls2024.613673",
@@ -73,7 +73,7 @@ export const projects = [
   {
     imgPath: starryNight,
     isBlog: false,
-    bannerText: "9.5 Million+ Views",
+    bannerText: "9.5 M+ Views",
     title: "TED-Ed",
     description:
       "Many students see math as disconnected from creativity. I wrote scripts for three TED-Ed videos that reveal its role in art, music, and literature, crafting clear, engaging stories that make abstract ideas feel intuitive.",
@@ -83,7 +83,7 @@ export const projects = [
   {
     imgPath: mentalCalc,
     isBlog: false,
-    bannerText: "NYT Bestselling Books",
+    bannerText: "NYT Bestsellers",
     title: "The Art of Mental Calculation",
     description:
       "I illustrated two New York Times bestselling books that make mental math more visual and approachable. Using playful diagrams and clear layouts, I helped turn Dr. Benjamin’s techniques into an intuitive and fun learning experience.",

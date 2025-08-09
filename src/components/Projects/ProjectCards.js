@@ -29,32 +29,7 @@ function ProjectCards(props) {
       {props.bannerText && (
         <div
           className="project-card-banner"
-          style={{
-            position: 'absolute',
-            top: 24,
-            left: 0,
-            width: 'calc(100% - 44px)',
-            right: 44,
-            zIndex: 2,
-            height: 28,
-            background: props.bannerColor || '#56919c',
-            color: '#fff',
-            fontWeight: 700,
-            fontSize: 16,
-            textAlign: 'center',
-            lineHeight: '28px',
-            margin: 0,
-            boxShadow: '0 2px 8px rgba(0,0,0,0.10)',
-            letterSpacing: 1,
-            textShadow: '0 1px 2px rgba(0,0,0,0.10)',
-            userSelect: 'none',
-            overflow: 'visible',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            pointerEvents: 'none',
-            // Rectangle shape: remove clipPath
-          }}
+          style={{ background: props.bannerColor || '#56919c' }}
         >
           {props.bannerText}
         </div>
