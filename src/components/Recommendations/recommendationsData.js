@@ -10,6 +10,15 @@ const recommendations = [
     // no website for this entry
   },
     {
+    name: "Dan Damelin",
+    photo: require("../../Assets/colleagues/dan-damelin.jpeg"),
+    quote: "I had the pleasure of supervising Talya at the Concord Consortium, where she worked with me on several projects in a range of roles—including project manager, research associate, and junior QA engineer. Her ability to quickly adapt to new responsibilities and deliver high-quality work in each of these roles was truly impressive. \n Talya has an exceptional capacity for focus, particularly when working with complex research data. Her analytical skills consistently led to meaningful insights and strengthened the quality of our work. She was the primary author of a research paper for ICLS in 2024 that won an Outstanding Long Paper award. She also brought creativity to every task, frequently offering thoughtful alternative solutions that enhanced both our process and outcomes. \n Talya is a rare combination of flexibility, precision, and creative problem-solving. She was a valuable member of every team she was part of at the Concord Consortium.",
+    jobTitle: "Principal Investigator, curriculum and technology developer",
+    linkedin: "https://www.linkedin.com/in/ddamelin/",
+    organization: "The Concord Consortium",
+    // no website for this entry
+  },
+    {
     name: "Kiley Brown, A-CSM",
     photo: require("../../Assets/colleagues/kiley-brown.jpeg"),
     quote: "Natalya is a self-starter in the truest sense. She brings sharp attention to detail, excellent communication skills, and a calm, thorough approach to problem-solving. She is prompt, professional, and unafraid to tackle complex tasks or pick up entirely new skillsets—traits that made her a trusted colleague across departments.",
@@ -27,13 +36,13 @@ const recommendations = [
     organization: "The Concord Consortium",
     // no website for this entry
   },
-  {
-    name: "Dan Damelin",
-    photo: require("../../Assets/colleagues/dan-damelin.jpeg"),
-    quote: "I had the pleasure of supervising Talya at the Concord Consortium, where she worked with me on several projects in a range of roles—including project manager, research associate, and junior QA engineer. Her ability to quickly adapt to new responsibilities and deliver high-quality work in each of these roles was truly impressive. \n Talya has an exceptional capacity for focus, particularly when working with complex research data. Her analytical skills consistently led to meaningful insights and strengthened the quality of our work. She was the primary author of a research paper for ICLS in 2024 that won an Outstanding Long Paper award. She also brought creativity to every task, frequently offering thoughtful alternative solutions that enhanced both our process and outcomes. \n Talya is a rare combination of flexibility, precision, and creative problem-solving. She was a valuable member of every team she was part of at the Concord Consortium.",
-    jobTitle: "Principal Investigator, curriculum and technology developer",
-    linkedin: "https://www.linkedin.com/in/ddamelin/",
-    organization: "The Concord Consortium",
+    {
+    name: "Kathy Cordeiro",
+    photo: require("../../Assets/colleagues/kathy-cordeiro.jpeg"),
+    quote: "We've all had that experience of collaborating with someone whose insights and vision leave you better off than when the conversation began—Talya is undoubtedly that person. Her kind collaboration, creativity, and sharp problem-solving skills made her an incredibly popular instructor at the challenging math camps where we worked together, which drew campers from all over the world and trained them up to the International Mathematics Olympiad level. \n Now, as Head of Family Experience at Art of Problem Solving, I still love connecting with Talya, knowing I'll walk away with a smile on my face and my mind brimming with fresh possibilities. She's had the same uplifting impact on others in my circle who've been fortunate enough to spend time with her. Talya would be a tremendous asset to any organization lucky enough to bring her on board.",
+    jobTitle: "Head of Family Experience",
+    linkedin: "https://www.linkedin.com/in/kathycordeiro/",
+    organization: "The Art of Problem-Solving",
     // no website for this entry
   },
   {
