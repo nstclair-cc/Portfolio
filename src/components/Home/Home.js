@@ -39,7 +39,7 @@ function Home() {
                 Hello! My name is Natalya St. Clair.
               </h1>
               <h1 className="heading-name">
-                UX researcher with QA and PM expertise, creating intuitive, visual tools from complex ideas.
+                I am a UX researcher with QA and PM expertise, creating intuitive, visual tools from complex ideas.
                 </h1>
 
               <h1 className="heading"><br />I design and build experiences that make complex ideas clear, drawing on my background in UX research, math, and analytical problem solving for education and technology.</h1>
