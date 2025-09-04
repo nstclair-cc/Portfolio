@@ -5,6 +5,11 @@ import Button from "react-bootstrap/Button";
 import { BsGithub } from "react-icons/bs";
 
 function Github() {
+  React.useEffect(() => {
+    return () => {
+      // cleanup if needed
+    };
+  }, []);
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "10px", flexDirection: "column", alignItems: "center" }}>
       <h1 className="project-heading" style={{ paddingBottom: "20px" }}>
