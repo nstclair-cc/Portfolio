@@ -28,7 +28,28 @@ function Home() {
   };
 
   return (
-    <section>
+    <>
+      <script type="application/ld+json">
+        {`
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Natalya St. Clair",
+          "jobTitle": "Product Manager, UX Researcher",
+          "description": "Product & UX Research – Natalya St. Clair. Human-Centered AI, EdTech, data visualization, QA automation, portfolio, case study, research, insights, stakeholder, usability, mixed methods.",
+          "alumniOf": "Harvard University",
+          "email": "mailto:natalya.stclair@gmail.com",
+          "url": "https://natalyastclair.vercel.app/",
+          "image": "https://raw.githubusercontent.com/nstclair-cc/Portfolio/master/Images/avatar.png",
+          "sameAs": [
+            "https://www.linkedin.com/in/natalyastclair/",
+            "https://github.com/nstclair-cc",
+            "https://natalyastclair.vercel.app/"
+          ]
+        }
+        `}
+      </script>
+      <section>
       <Container fluid className="home-section" id="home">
         <Container className="home-content">
           <Row>
@@ -349,6 +370,7 @@ function Home() {
               </a>
             </div>
     </section>
+    </>
   );
 }
 
