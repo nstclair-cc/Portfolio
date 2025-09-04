@@ -30,7 +30,6 @@ import codap from "../../Assets/Projects/codap.svg";
 import documentationImage from "../../Assets/Projects/internal-documentation.svg";
 // Import modal content components
 
-// ...existing code...
 export const projects = [
     {
     imgPath: multiData,
@@ -137,33 +136,167 @@ function Projects() {
   };
   return (
     <>
+      {/* JSON-LD CreativeWork blocks for ATS/crawler */}
+      <script type="application/ld+json">
+        {`
+        {
+          "@context": "https://schema.org",
+          "@type": "CreativeWork",
+          "name": "Navigating Multidimensional Data Structures",
+          "description": "As first author on an award-winning study, I examined how data experts explore unfamiliar datasets. We identified hands-on strategies that can guide the design of tools to help students make sense of complex data.",
+          "url": "https://doi.org/10.22318/icls2024.613673",
+          "thumbnailUrl": "https://raw.githubusercontent.com/nstclair-cc/Portfolio/master/src/Assets/Projects/multi-data.svg",
+          "datePublished": "2024-05-01",
+          "inLanguage": "en",
+          "keywords": ["data", "education", "award", "ICLS"],
+          "author": { "@id": "https://natalyastclair.vercel.app/#person" }
+        }
+        `}
+      </script>
+      <script type="application/ld+json">
+        {`
+        {
+          "@context": "https://schema.org",
+          "@type": "CreativeWork",
+          "name": "But is it supposed to be a straight line?",
+          "description": "Students using classroom sensor tools often struggled to interpret noisy graph data. I led UX research to uncover where interactions broke down and proposed design changes to support graph literacy and smoother analysis.",
+          "url": "http://dx.doi.org/10.1080/09500693.2023.2260064",
+          "thumbnailUrl": "https://raw.githubusercontent.com/nstclair-cc/Portfolio/master/src/Assets/Projects/straight-line.svg",
+          "datePublished": "2023-10-01",
+          "inLanguage": "en",
+          "keywords": ["UX", "graph", "education", "sensor"],
+          "author": { "@id": "https://natalyastclair.vercel.app/#person" }
+        }
+        `}
+      </script>
+      <script type="application/ld+json">
+        {`
+        {
+          "@context": "https://schema.org",
+          "@type": "CreativeWork",
+          "name": "Audio Transcriber",
+          "description": "To meet strict student privacy requirements, I built a Python toolkit for transcribing classroom video without sending data to the cloud. The tool supports real-time and offline use, making secure, scalable transcription possible for research teams.",
+          "url": "https://github.com/concord-consortium/audio-transcriber",
+          "thumbnailUrl": "https://raw.githubusercontent.com/nstclair-cc/Portfolio/master/src/Assets/Projects/audio-transcriber.svg",
+          "datePublished": "2024-03-01",
+          "inLanguage": "en",
+          "keywords": ["AI", "audio", "transcription", "privacy"],
+          "author": { "@id": "https://natalyastclair.vercel.app/#person" }
+        }
+        `}
+      </script>
+      <script type="application/ld+json">
+        {`
+        {
+          "@context": "https://schema.org",
+          "@type": "CreativeWork",
+          "name": "CODAP automation",
+          "description": "Graph features in a classroom data tool were time-consuming to test manually due to custom rendering. I automated testing with Cypress by exposing hidden graph data, and also led usability research based on feedback from real classrooms.",
+          "url": "https://github.com/concord-consortium/codap/tree/main/v3/cypress/e2e/pixi-interaction",
+          "thumbnailUrl": "https://raw.githubusercontent.com/nstclair-cc/Portfolio/master/src/Assets/Projects/codap-cypress.svg",
+          "datePublished": "2024-02-01",
+          "inLanguage": "en",
+          "keywords": ["automation", "Cypress", "testing", "education"],
+          "author": { "@id": "https://natalyastclair.vercel.app/#person" }
+        }
+        `}
+      </script>
+      <script type="application/ld+json">
+        {`
+        {
+          "@context": "https://schema.org",
+          "@type": "CreativeWork",
+          "name": "TED-Ed",
+          "description": "Many students see math as disconnected from creativity. I wrote scripts for three TED-Ed videos that reveal its role in art, music, and literature, crafting clear, engaging stories that make abstract ideas feel intuitive.",
+          "url": "https://ed.ted.com/lessons/the-unexpected-math-behind-van-gogh-s-starry-night-natalya-st-clair",
+          "thumbnailUrl": "https://raw.githubusercontent.com/nstclair-cc/Portfolio/master/src/Assets/Projects/starry-night.svg",
+          "datePublished": "2022-09-01",
+          "inLanguage": "en",
+          "keywords": ["TED-Ed", "math", "creativity", "video"],
+          "author": { "@id": "https://natalyastclair.vercel.app/#person" }
+        }
+        `}
+      </script>
+      <script type="application/ld+json">
+        {`
+        {
+          "@context": "https://schema.org",
+          "@type": "CreativeWork",
+          "name": "The Art of Mental Calculation",
+          "description": "I illustrated two New York Times bestselling books that make mental math more visual and approachable. Using playful diagrams and clear layouts, I helped turn Dr. Benjamin’s techniques into an intuitive and fun learning experience.",
+          "url": "https://www.amazon.com/dp/1495219968",
+          "thumbnailUrl": "https://raw.githubusercontent.com/nstclair-cc/Portfolio/master/src/Assets/Projects/mental-calc.svg",
+          "datePublished": "2021-06-01",
+          "inLanguage": "en",
+          "keywords": ["math", "book", "NYT", "illustration"],
+          "author": { "@id": "https://natalyastclair.vercel.app/#person" }
+        }
+        `}
+      </script>
+      <script type="application/ld+json">
+        {`
+        {
+          "@context": "https://schema.org",
+          "@type": "CreativeWork",
+          "name": "CODAP v2 Launch & DSET Conference",
+          "description": "As CODAP v2 neared release, the team needed to build community momentum around data science education. I led the product launch and organized a conference for 100+ educators and developers to share tools and collaborate in person.",
+          "url": "https://codap.concord.org/dset/index.html",
+          "thumbnailUrl": "https://raw.githubusercontent.com/nstclair-cc/Portfolio/master/src/Assets/Projects/codap.svg",
+          "datePublished": "2023-08-01",
+          "inLanguage": "en",
+          "keywords": ["CODAP", "conference", "data science", "education"],
+          "author": { "@id": "https://natalyastclair.vercel.app/#person" }
+        }
+        `}
+      </script>
+      <script type="application/ld+json">
+        {`
+        {
+          "@context": "https://schema.org",
+          "@type": "CreativeWork",
+          "name": "Next Generation Preschool",
+          "description": "Teachers using tablet-based tools for preschool science needed better support for hands-on, cross-media learning. I ran mixed-methods UX research to uncover workflow challenges and shared design recommendations to improve usability.",
+          "url": "https://drive.google.com/file/d/0BwPizBG8eJiyb1RFTUVIYzgwaE0/view?usp=sharing&resourcekey=0-aGqxlTCJAuNFCBlmF2D0fA",
+          "thumbnailUrl": "https://raw.githubusercontent.com/nstclair-cc/Portfolio/master/src/Assets/Projects/wgbh-ngps.svg",
+          "datePublished": "2022-03-01",
+          "inLanguage": "en",
+          "keywords": ["preschool", "UX", "tablet", "science"],
+          "author": { "@id": "https://natalyastclair.vercel.app/#person" }
+        }
+        `}
+      </script>
+      <script type="application/ld+json">
+        {`
+        {
+          "@context": "https://schema.org",
+          "@type": "CreativeWork",
+          "name": "Internal Documentation",
+          "description": "I led an internal documentation effort at The Concord Consortium to make our products more usable for curriculum, research, and product teams. Through screencasts, prompts, and trainings, we transformed internal knowledge into a shared, accessible resource.",
+          "url": "https://learn.concord.org/help",
+          "thumbnailUrl": "https://raw.githubusercontent.com/nstclair-cc/Portfolio/master/src/Assets/Projects/internal-documentation.svg",
+          "datePublished": "2023-11-01",
+          "inLanguage": "en",
+          "keywords": ["documentation", "internal", "training", "education"],
+          "author": { "@id": "https://natalyastclair.vercel.app/#person" }
+        }
+        `}
+      </script>
       <Container fluid className="project-section">
         <Particle />
         <Container>
           <h1 className="project-heading">
-            Featured <strong className="purple">Projects </strong>
+            Portfolio <strong className="purple">Projects</strong>
           </h1>
-          <p style={{ color: "white" }}>
-            Here are a few projects I've worked on recently.
-          </p>
+          <h2 style={{ fontWeight: 700, fontSize: 32, marginBottom: 24 }}>
+            Featured Projects
+          </h2>
           <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
             {projects.map((project, idx) => (
               <Col md={4} className="project-card" key={project.title + '-' + idx}>
                 <ProjectCard
                   {...project}
-                  renderImage={() => (
-                    <img
-                      src={project.imgPath}
-                      alt={project.title}
-                      onClick={e => {
-                        e.stopPropagation();
-                        handleProjectClick(project);
-                      }}
-                      style={{ cursor: 'pointer', width: '100%', borderRadius: 8, marginBottom: 0 }}
-                    />
-                  )}
                   renderTitle={() => (
-                    <h2
+                    <h3
                       onClick={e => {
                         e.stopPropagation();
                         handleProjectClick(project);
@@ -171,7 +304,7 @@ function Projects() {
                       style={{ cursor: 'pointer', marginBottom: 8 }}
                     >
                       {project.title}
-                    </h2>
+                    </h3>
                   )}
                   // Pass open-in-modal handler as a prop for button row
                   onOpenModal={() => handleProjectClick(project)}

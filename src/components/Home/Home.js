@@ -1,4 +1,3 @@
-
 import React from "react";
 import { projects } from "../Projects/Projects";
 import ProjectCard from "../Projects/ProjectCards";
@@ -57,13 +56,14 @@ function Home() {
 
               <div style={{ padding: 50, textAlign: "left" }}>
                 <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hello! My name is Natalya St. Clair.
-              </h1>
-              <h1 className="heading-name">
-                  I am a Product Manager and UX Researcher working at the intersection of AI, education, and product design.
+                  Hello! My name is Natalya St. Clair.
                 </h1>
-
-              <h1 className="heading"><br />I am seeking to join a mission-driven EdTech company in the East Bay where I can help build human-centered AI products that make complex ideas intuitive and accessible.</h1>
+                <h2 className="heading-name">
+                  I am a Product Manager and UX Researcher working at the intersection of AI, education, and product design.
+                </h2>
+                <h2 className="heading">
+                  I am seeking to join a mission-driven EdTech company in the East Bay where I can help build human-centered AI products that make complex ideas intuitive and accessible.
+                </h2>
               </div>
 
 
@@ -90,7 +90,9 @@ function Home() {
       </Container>
       {/* Featured Projects Preview */}
       <Container className="home-projects-preview" style={{ marginTop: 40, marginBottom: 40 }}>
-        <h2 style={{ fontWeight: 700, fontSize: 32, marginBottom: 24 }} data-aos="fade-up">Featured Projects</h2>
+        <h2 style={{ fontWeight: 700, fontSize: 32, marginBottom: 24 }} data-aos="fade-up">
+          Featured Projects
+        </h2>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           {projects.slice(0, 6).map((project, idx) => (
             <Col md={4} className="project-card" key={project.title + "-preview-" + idx}>
@@ -109,7 +111,7 @@ function Home() {
                   />
                 )}
                 renderTitle={() => (
-                  <h2
+                  <h3
                     onClick={e => {
                       e.stopPropagation();
                       handleProjectClick(project);
@@ -117,7 +119,7 @@ function Home() {
                     style={{ cursor: 'pointer', marginBottom: 8 }}
                   >
                     {project.title}
-                  </h2>
+                  </h3>
                 )}
               />
             </Col>

@@ -18,6 +18,7 @@ function ResumeNew() {
   return (
     <div>
       <Container fluid className="resume-section">
+        <h1 className="resume-title">Resume – Natalya St. Clair</h1>
         <Particle />
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button

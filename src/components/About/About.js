@@ -11,7 +11,7 @@ function About() {
     <Container fluid className="about-section">
       <Container>
         <Row style={{ justifyContent: "top", padding: "10px" }}>
-                   <Col
+          <Col
             md={5}
             style={{ paddingTop: "120px", paddingBottom: "50px" }}
             className="about-img"
@@ -32,15 +32,15 @@ function About() {
             <Aboutcard />
           </Col>
         </Row>
-        <h1 className="project-heading">
+        <h2 className="project-heading">
           Professional <strong className="purple">Skillset </strong>
-        </h1>
+        </h2>
 
         <Techstack />
 
-        <h1 className="project-heading">
+        <h2 className="project-heading">
           <strong className="purple">Tools</strong> I use
-        </h1>
+        </h2>
         <Toolstack />
 
         <Github />
