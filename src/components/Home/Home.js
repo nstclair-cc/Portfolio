@@ -59,10 +59,10 @@ function Home() {
                   Hello! My name is Natalya St. Clair.
                 </h1>
                 <h2 className="heading-name">
-                  I am a Product Manager and UX Researcher working at the intersection of AI, education, and product design.
+                  I’m a Product Manager and UX Researcher with a passion for building human-centered AI and data-driven solutions in EdTech, tech, and enterprise learning.
                 </h2>
                 <h2 className="heading">
-                  I am seeking to join a mission-driven EdTech company in the East Bay where I can help build human-centered AI products that make complex ideas intuitive and accessible.
+                  I’m seeking a Product Manager or Project Manager role at a midsize company, whether in EdTech, tech, or AI, where I can leverage my UX research skills to help teams build intuitive, impactful tools for learners and educators.
                 </h2>
               </div>
 
@@ -93,6 +93,9 @@ function Home() {
         <h2 style={{ fontWeight: 700, fontSize: 32, marginBottom: 24 }} data-aos="fade-up">
           Featured Projects
         </h2>
+        <p>
+          My work spans EdTech, math education, and enterprise platforms, helping organizations deliver engaging, accessible learning experiences powered by human-centered data science andAI.
+        </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           {projects.slice(0, 6).map((project, idx) => (
             <Col md={4} className="project-card" key={project.title + "-preview-" + idx}>
