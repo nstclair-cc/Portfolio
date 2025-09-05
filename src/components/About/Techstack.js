@@ -14,54 +14,63 @@ import {
 
 function Techstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiAirtable />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiHtml5 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiOpenai />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
-      </Col>
-      {/* SiCursor removed: not available in react-icons */}
-      <Col xs={4} md={2} className="tech-icons">
-        <SiCypress />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiR />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <AiFillGithub />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiAtlassian />
-      </Col>
-            <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
-      </Col>
-          <Col xs={4} md={2} className="tech-icons">
-        <SiWordpress />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPhotoshop />
-      </Col>
-            <Col xs={4} md={2} className="tech-icons">
-        <SiAdobeillustrator />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMailchimp />
+    <>
+      <Row style={{ justifyContent: "center", paddingBottom: "16px" }}>
+        <Col xs={12} style={{ marginBottom: "24px", textAlign: "left" }}>
+          <div className="techstack-keywords" style={{ fontSize: "1.1em", color: "#222" }}>
+            <strong>Skills:</strong> JavaScript, React, Python, HTML5, CSS, Cypress, R, GitHub, Atlassian, WordPress, Airtable, OpenAI API, vibe coding, Adobe Photoshop, Adobe Illustrator, Mailchimp, Scrum, UX Research, QA Automation, Data Visualization, Curriculum Design
+          </div>
         </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiScrum />
-      </Col>
-    </Row>
+      </Row>
+      <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+        <Col xs={4} md={2} className="tech-icons">
+          <SiAirtable />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <DiHtml5 />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <SiOpenai />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <DiJavascript1 />
+        </Col>
+        {/* SiCursor removed: not available in react-icons */}
+        <Col xs={4} md={2} className="tech-icons">
+          <SiCypress />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <SiR />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <DiPython />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <AiFillGithub />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <SiAtlassian />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <DiReact />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <SiWordpress />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <DiPhotoshop />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <SiAdobeillustrator />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <DiMailchimp />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <DiScrum />
+        </Col>
+      </Row>
+    </>
   );
 }
 
