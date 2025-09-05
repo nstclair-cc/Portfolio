@@ -21,16 +21,16 @@ function Home2() {
                 I design and build tools in tech that help people think more clearly—especially in education, data, and research.
                 <br />
                 <br />
-                My work spans <b className="purple">UX research, QA automation, and curriculum design</b>. I've built classroom data tools used by millions of students, created test systems that caught thousands of bugs before they reached users, and helped teams understand how learners reason with complex visualizations.
+                My work spans <b className="purple">UX research, QA automation, and curriculum design</b>. As a Product Manager and UX Researcher, I've built classroom data tools used by millions of students, created test systems that caught thousands of bugs before they reached users, and helped teams understand how learners reason with complex visualizations.
                 <br />
                 <br />
                 My background blends <i><b className="purple">math, art, and code</b></i>—a perspective that helps me approach problems both creatively and systematically. I’m also the co-creator of a series of animated math lessons that have reached over <b className="purple">9 million viewers</b> on TED-Ed.
                 <br />
                 <br />
-                I care most about projects that help people learn something new, understand something hard, or solve a problem that matters. 
+                I care most about projects that help people learn something new, understand something hard, or solve a problem that matters.
                 <br />
                 <br />
-                Right now, I’m looking for a <b className="purple">content design or research role</b> at a mission-driven organization where I can translate complex ideas into engaging, visual educational experiences—ideally at the intersection of <b className="purple">math, data, and storytelling</b>.
+                Right now, I’m looking for a <b className="purple">Product Manager, Project Manager, or research role</b> at a mission-driven tech or EdTech organization where I can leverage my UX research skills to help build human-centered AI tools and translate complex ideas into engaging, visual educational experiences—ideally at the intersection of <b className="purple">math, data, and storytelling</b>.
               </p>
             </Col>
         </Row>
