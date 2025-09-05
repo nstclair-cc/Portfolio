@@ -34,8 +34,8 @@ function Home() {
           "@context": "https://schema.org",
           "@type": "Person",
           "name": "Natalya St. Clair",
-          "jobTitle": "Product Manager, UX Researcher",
-          "description": "Product & UX Research – Natalya St. Clair. Human-Centered AI, EdTech, data visualization, QA automation, portfolio, case study, research, insights, stakeholder, usability, mixed methods.",
+          "jobTitle": "Product Manager",
+          "description": "Product Management – Natalya St. Clair. Human-Centered AI, EdTech, data visualization, QA automation, portfolio, case study, research, insights, stakeholder, usability, mixed methods.",
           "alumniOf": "Harvard University",
           "email": "mailto:natalya.stclair@gmail.com",
           "url": "https://natalyastclair.vercel.app/",
@@ -59,10 +59,10 @@ function Home() {
                   Hello! My name is Natalya St. Clair.
                 </h1>
                 <h2 className="heading-name">
-                  I’m a Product Manager and UX Researcher with a passion for building human-centered AI and data-driven solutions in EdTech, tech, and enterprise learning.
+                  I’m looking for a Product Manager or Project Manager role in a midsize edtech company that wants to leverage my UX research skills to help them build their human-centered AI tools.
                 </h2>
                 <h2 className="heading">
-                  I’m seeking a Product Manager or Project Manager role at a midsize company, whether in EdTech, tech, or AI, where I can leverage my UX research skills to help teams build intuitive, impactful tools for learners and educators.
+                  I specialize in human-centered AI, data visualization, and usability research, and I’m passionate about helping teams create intuitive, impactful tools for learners and educators.
                 </h2>
               </div>
 
