@@ -59,10 +59,10 @@ function Home() {
                   Hello! My name is Natalya St. Clair.
                 </h1>
                 <h2 className="heading-name">
-                  I’m looking for a Product Manager or Project Manager role in a midsize edtech company that wants to leverage my UX research skills to help them build their human-centered AI tools.
+                  I’m looking for a Product Manager or Project Manager role in a midsize edtech company that values human-centered AI and wants to leverage my UX research skills.
                 </h2>
                 <h2 className="heading">
-                  I specialize in human-centered AI, data visualization, and usability research, and I’m passionate about helping teams create intuitive, impactful tools for learners and educators.
+                  My focus is on building intuitive, impactful tools for learners and educators through data visualization, usability research, and collaborative product development.
                 </h2>
               </div>
 
