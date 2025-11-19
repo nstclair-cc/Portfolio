@@ -34,8 +34,8 @@ function Home() {
           "@context": "https://schema.org",
           "@type": "Person",
           "name": "Natalya St. Clair",
-          "jobTitle": "Product Manager",
-          "description": "Product Management – Natalya St. Clair. Human-Centered AI, EdTech, data visualization, QA automation, portfolio, case study, research, insights, stakeholder, usability, mixed methods.",
+          "jobTitle": "Project Manager",
+          "description": "Project Management – Natalya St. Clair. Human-Centered AI, EdTech, data visualization, QA automation, portfolio, case study, research, insights, stakeholder, usability, mixed methods.",
           "alumniOf": "Harvard University",
           "email": "mailto:natalya.stclair@gmail.com",
           "url": "https://natalyastclair.vercel.app/",
@@ -62,7 +62,7 @@ function Home() {
                     I’m a <strong>Project Manager</strong> with a background in <strong>QA</strong> and <strong>UX Research</strong> who builds human-centered AI tools for learning.
                 </h2>
                 <h2 className="heading">
-                 With more than nine years in data-science education, and a background as a math educator, I bring experience in product strategy, QA automation, and coding to create intuitive tools that help teachers teach and students learn.
+                  With nine years in data-science education and a foundation as a math educator, I’ve worked across project management, technical quality, and user research to shape tools that support real classroom needs. I’m comfortable switching between debugging a flaky UI test, coordinating a release, or running a research study, whatever keeps the product stable and the work moving.
                 </h2>
               </div>
 
@@ -94,7 +94,7 @@ function Home() {
           Featured Projects
         </h2>
         <p>
-          My work spans EdTech, math education, and enterprise platforms, helping organizations deliver engaging, accessible learning experiences powered by human-centered data science and AI.
+            Here are a few projects I’ve worked on across data-science education, edtech, and AI-supported learning. My focus is usually on the parts that sit between project management, technical quality, and user research, making sure what we build is usable, accurate, and grounded in how teachers and students actually learn.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           {projects.slice(0, 6).map((project, idx) => (

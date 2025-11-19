@@ -17,20 +17,14 @@ function Home2() {
               <h1 style={{ fontSize: "2.6em" }}>
                 LET ME <span className="purple"> INTRODUCE </span> MYSELF
               </h1>
-              <p className="home-about-body">
-                I design and build tools in tech that help people think more clearly, especially in education, data, and research.
-                <br />
-                <br />
-                My work spans <b className="purple">UX research, QA automation, and curriculum design</b>. As a Product Manager and UX Researcher, I've built classroom data tools used by millions of students, created test systems that caught thousands of bugs before they reached users, and helped teams understand how learners reason with complex visualizations.
-                <br />
-                <br />
-                My background blends <i><b className="purple">math, art, and code</b></i>—a perspective that helps me approach problems both creatively and systematically. I’m also the co-creator of a series of animated math lessons that have reached over <b className="purple">9 million viewers</b> on TED-Ed.
-                <br />
-                <br />
-                I care most about projects that help people learn something new, understand something hard, or solve a problem that matters.
-                <br />
-                <br />
-                Right now, I’m looking for a <b className="purple">Product Manager, Project Manager, or research role</b> at a mission-driven tech or EdTech organization where I can leverage my UX research skills to help build human-centered AI tools and translate complex ideas into engaging, visual educational experiences, ideally at the intersection of <b className="purple">math, data, and storytelling</b>.
+                <p className="home-about-body">
+                I work across product, QA, and UX research to help teams build learning tools that teachers and students can rely on. My work usually sits where research, technical quality, and clear project execution meet.
+                <br /><br />
+                My background spans <b className="purple">UX research, QA automation, and classroom-facing product work</b>. I’ve helped build data-science tools used by over a million learners, created automated tests that prevented thousands of bugs from reaching classrooms, and led research on how students reason with complex visualizations.
+                <br /><br />
+                My training blends <i><b className="purple">math, art, and code</b></i>. I also wrote and produced a series of TED-Ed math animations that have reached more than <b className="purple">9 million viewers</b>.
+                <br /><br />
+                I’m most motivated by projects that help people learn something challenging or solve a real classroom need. Right now, I’m looking for <b className="purple">Project or Program Management</b> roles in mission-driven edtech or AI-for-learning organizations where I can combine UX research, QA, and steady product execution to support reliable, human-centered tools.
               </p>
             </Col>
         </Row>
