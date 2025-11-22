@@ -32,12 +32,21 @@ import documentationImage from "../../Assets/Projects/internal-documentation.svg
 
 export const projects = [
     {
+    imgPath: audioTranscriber,
+    isBlog: false,
+    title: "Audio Transcriber with Python",
+    description:
+      "When privacy rules made cloud transcription a non-starter, I built a local Python toolkit that keeps every second of classroom video on-device. It now gives research teams fast, secure transcripts without compromising a single student.",
+    ghLink: "https://github.com/concord-consortium/audio-transcriber",
+    modalContent: <AudioTranscriber />, 
+  },  
+  {
     imgPath: multiData,
     isBlog: false,
     title: "Navigating Multidimensional Data Structures",
     bannerText: "ICLS Award",
     description:
-      "As first author on an award-winning study, I examined how data experts explore unfamiliar datasets. We identified hands-on strategies that can guide the design of tools to help students make sense of complex data.",
+      "This ICLS Best Paper study revealed how experts actually navigate unfamiliar, high-dimensional datasets. As first author, I surfaced the strategies that should shape the next generation of student-facing data tools.",
     demoLink: "https://doi.org/10.22318/icls2024.613673",
     driveLink: "https://drive.google.com/file/d/1TGmCmVqtPKryMxVXh-NTAGAhwpQ_4J6Y/view?usp=sharing",
     modalContent: <MultiDataModalContent />, 
@@ -47,25 +56,16 @@ export const projects = [
     isBlog: false,
     title: "But is it supposed to be a straight line?",
     description:
-      "Students using classroom sensor tools often struggled to interpret noisy graph data. I led UX research to uncover where interactions broke down and proposed design changes to support graph literacy and smoother analysis.",
+      "When sensor data got messy, students got confused. I led the research that pinpointed why—and delivered design insights that make noisy graphs easier to read, explore, and trust.",
     demoLink: "http://dx.doi.org/10.1080/09500693.2023.2260064",
     modalContent: <StraightLine />, 
-  },
-  {
-    imgPath: audioTranscriber,
-    isBlog: false,
-    title: "Audio Transcriber",
-    description:
-      "To meet strict student privacy requirements, I built a Python toolkit for transcribing classroom video without sending data to the cloud. The tool supports real-time and offline use, making secure, scalable transcription possible for research teams.",
-    ghLink: "https://github.com/concord-consortium/audio-transcriber",
-    modalContent: <AudioTranscriber />, 
   },
   {
     imgPath: codapCypress,
     isBlog: false,
     title: "CODAP automation",
     description:
-      "Graph features in a classroom data tool were time-consuming to test manually due to custom rendering. I automated testing with Cypress by exposing hidden graph data, and also led usability research based on feedback from real classrooms.",
+      "CODAP’s custom graph engine was nearly impossible to test by hand. I built Cypress tests that expose hidden graph data and finally make end-to-end testing reliable, paired with classroom UX insights that strengthened the full product.",
     ghLink: "https://github.com/concord-consortium/codap/tree/main/v3/cypress/e2e/pixi-interaction",
     modalContent: <AutomationPixiJS />, 
   },
@@ -75,7 +75,7 @@ export const projects = [
     bannerText: "9.5 M+ Views",
     title: "TED-Ed",
     description:
-      "Many students see math as disconnected from creativity. I wrote scripts for three TED-Ed videos that reveal its role in art, music, and literature, crafting clear, engaging stories that make abstract ideas feel intuitive.",
+      "I wrote three TED-Ed lessons, including one voted Best TED-Ed Lesson of All Time, showing how patterns drive art, music, and literature. Clear visuals, tight storytelling, and millions of learners reached.",
     demoLink: "https://ed.ted.com/lessons/the-unexpected-math-behind-van-gogh-s-starry-night-natalya-st-clair",
     modalContent: <TEDEdLesson />, 
   },
@@ -85,16 +85,16 @@ export const projects = [
     bannerText: "NYT Bestsellers",
     title: "The Art of Mental Calculation",
     description:
-      "I illustrated two New York Times bestselling books that make mental math more visual and approachable. Using playful diagrams and clear layouts, I helped turn Dr. Benjamin’s techniques into an intuitive and fun learning experience.",
+      "I illustrated two New York Times bestselling books that turn Dr. Benjamin’s mental-math techniques into intuitive visuals. The diagrams do the heavy lifting, making big calculations feel approachable and fun.",
     demoLink: "https://www.amazon.com/dp/1495219968",
     modalContent: <ArtOfMentalCalc />, 
   },
   {
     imgPath: codap,
     isBlog: false,
-    title: "CODAP v2 Launch & DSET Conference",
+    title: "CODAP Launch & DSET Conference",
     description:
-      "As CODAP v2 neared release, the team needed to build community momentum around data science education. I led the product launch and organized a conference for 100+ educators and developers to share tools and collaborate in person.",
+      "CODAP needed momentum, not just a release date. I led the product launch and organized a 100+-person conference that brought educators, researchers, and developers into a shared roadmap.",
     demoLink: "https://codap.concord.org/dset/index.html",
     modalContent: <DSETConferenceModalContent />,
   },
