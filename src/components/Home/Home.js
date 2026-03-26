@@ -59,10 +59,10 @@ function Home() {
                   Hello! My name is Natalya St. Clair.
                 </h1>
                 <h2 style={{ paddingBottom: 15 }} className="heading">
-                    I’m a <strong>Project Manager</strong> with a background in <strong>QA</strong> and <strong>UX Research</strong> who builds human-centered AI tools for learning.
+                  I'm a <strong>QA Lead</strong> with a background in <strong>math education</strong>, <strong>UX research</strong>, and <strong>edtech content</strong> who builds human-centered tools for learning.
                 </h2>
                 <h2 className="heading">
-                  With nine years in data-science education and a foundation as a math educator, I’ve worked across project management, technical quality, and user research to shape tools that support real classroom needs. I’m comfortable switching between debugging a flaky UI test, coordinating a release, or running a research study, whatever keeps the product stable and the work moving.
+                   With nine years in data-science education and a foundation as a math educator, I've worked across technical quality, user research, and content strategy to shape tools that support real classroom needs. I'm drawn to the intersection of AI, data visualization, and learning design. I'm most at home when I'm making something complex feel clear.
                 </h2>
               </div>
 
