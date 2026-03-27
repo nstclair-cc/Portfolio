@@ -24,7 +24,7 @@ function Home2() {
                 <br /><br />
                 My training blends <i><b className="purple">math, art, and code</b></i>. I also wrote and produced a series of TED-Ed math animations that have reached more than <b className="purple">9 million viewers</b>.
                 <br /><br />
-                I’m most motivated by projects that help people learn something challenging or solve a real classroom need. Right now, I’m looking for <b className="purple">Project or Program Management</b> roles in mission-driven edtech or AI-for-learning organizations where I can combine UX research, QA, and steady product execution to support reliable, human-centered tools.
+                I’m most motivated by projects that help people learn something challenging or solve a real classroom need.
               </p>
             </Col>
         </Row>
