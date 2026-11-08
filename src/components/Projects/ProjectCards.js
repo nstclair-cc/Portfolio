@@ -53,7 +53,7 @@ function ProjectCards(props) {
         <div className="card-btn-row">
           {/* GitHub button only if ghLink is provided */}
           {props.ghLink && (
-            <Button variant="primary" href={props.ghLink} target="_blank" style={{ marginRight: "10px" }}>
+            <Button variant="primary" href={props.ghLink} target="_blank" rel="noopener noreferrer" style={{ marginRight: "10px" }}>
               <BsGithub /> &nbsp;
               {props.isBlog ? "Blog" : "GitHub"}
             </Button>
@@ -64,7 +64,7 @@ function ProjectCards(props) {
             <Button
               variant="primary"
               href={props.demoLink}
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               style={{ marginRight: "10px" }}
             >
               <CgWebsite /> &nbsp;
@@ -76,7 +76,7 @@ function ProjectCards(props) {
             <Button
               variant="primary"
               href={props.driveLink}
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               style={{ marginRight: "10px" }}
             >
               <DiGoogleDrive /> &nbsp;

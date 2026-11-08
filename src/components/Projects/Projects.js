@@ -57,7 +57,7 @@ export const projects = [
     title: "But is it supposed to be a straight line?",
     description:
       "When sensor data got messy, students got confused. I led the research that pinpointed why—and delivered design insights that make noisy graphs easier to read, explore, and trust.",
-    demoLink: "http://dx.doi.org/10.1080/09500693.2023.2260064",
+    demoLink: "https://doi.org/10.1080/09500693.2023.2260064",
     modalContent: <StraightLine />, 
   },
   {
@@ -160,7 +160,7 @@ function Projects() {
           "@type": "CreativeWork",
           "name": "But is it supposed to be a straight line?",
           "description": "Students using classroom sensor tools often struggled to interpret noisy graph data. I led UX research to uncover where interactions broke down and proposed design changes to support graph literacy and smoother analysis.",
-          "url": "http://dx.doi.org/10.1080/09500693.2023.2260064",
+          "url": "https://doi.org/10.1080/09500693.2023.2260064",
           "thumbnailUrl": "https://raw.githubusercontent.com/nstclair-cc/Portfolio/master/src/Assets/Projects/straight-line.svg",
           "datePublished": "2023-10-01",
           "inLanguage": "en",
