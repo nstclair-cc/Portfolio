@@ -1,30 +1,24 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
-import {
-  SiVisualstudiocode,
-  SiSlack,
-  SiVercel,
-} from "react-icons/si";
+import { Row } from "react-bootstrap";
+import { SiSlack, SiVercel } from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
 import { DiApple, DiGoogleDrive } from "react-icons/di";
+import SkillIcon from "./SkillIcon";
+
+const tools = [
+  { name: "macOS", icon: DiApple },
+  { name: "VS Code", icon: VscVscode },
+  { name: "Google Drive", icon: DiGoogleDrive },
+  { name: "Slack", icon: SiSlack },
+  { name: "Vercel", icon: SiVercel },
+];
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiApple />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGoogleDrive />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSlack />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
-      </Col>
+      {tools.map((t) => (
+        <SkillIcon key={t.name} name={t.name} icon={t.icon} />
+      ))}
     </Row>
   );
 }

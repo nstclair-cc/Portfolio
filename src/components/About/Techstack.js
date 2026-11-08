@@ -1,16 +1,35 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { DiJavascript1, DiReact, DiPython, DiHtml5, DiPhotoshop, DiMailchimp, DiScrum } from "react-icons/di";
+import { DiJavascript1, DiReact, DiPython, DiHtml5, DiPhotoshop, DiScrum } from "react-icons/di";
 import { AiFillGithub } from "react-icons/ai";
 import {
   SiAirtable,
-  SiOpenai,
+  SiClaude,
   SiAdobeillustrator,
   SiCypress,
   SiR,
   SiAtlassian,
   SiWordpress
 } from "react-icons/si";
+import SkillIcon, { PlaywrightIcon } from "./SkillIcon";
+
+const skills = [
+  { name: "Airtable", icon: SiAirtable },
+  { name: "HTML5", icon: DiHtml5 },
+  { name: "Claude", icon: SiClaude },
+  { name: "JavaScript", icon: DiJavascript1 },
+  { name: "Playwright", icon: PlaywrightIcon },
+  { name: "Cypress", icon: SiCypress },
+  { name: "R", icon: SiR },
+  { name: "Python", icon: DiPython },
+  { name: "GitHub", icon: AiFillGithub },
+  { name: "Atlassian", icon: SiAtlassian },
+  { name: "React", icon: DiReact },
+  { name: "WordPress", icon: SiWordpress },
+  { name: "Adobe Photoshop", icon: DiPhotoshop },
+  { name: "Adobe Illustrator", icon: SiAdobeillustrator },
+  { name: "Scrum", icon: DiScrum },
+];
 
 function Techstack() {
   return (
@@ -18,57 +37,14 @@ function Techstack() {
       <Row style={{ justifyContent: "center", paddingBottom: "16px" }}>
         <Col xs={12} style={{ marginBottom: "24px", textAlign: "left" }}>
           <div className="techstack-keywords" style={{ fontSize: "1.1em", color: "#222" }}>
-            <strong>Skills:</strong> JavaScript, React, Python, HTML5, CSS, Cypress, R, GitHub, Atlassian, WordPress, Airtable, OpenAI API, vibe coding, Adobe Photoshop, Adobe Illustrator, Mailchimp, Scrum, UX Research, QA Automation, Data Visualization, Curriculum Design
+            <strong>Skills:</strong> JavaScript, React, Python, HTML5, CSS, Playwright, Cypress, R, GitHub, Atlassian, WordPress, Airtable, Claude, vibe coding, Adobe Photoshop, Adobe Illustrator, Scrum, UX Research, QA Automation, Data Visualization, Curriculum Design
           </div>
         </Col>
       </Row>
       <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-        <Col xs={4} md={2} className="tech-icons">
-          <SiAirtable />
-        </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <DiHtml5 />
-        </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <SiOpenai />
-        </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <DiJavascript1 />
-        </Col>
-        {/* SiCursor removed: not available in react-icons */}
-        <Col xs={4} md={2} className="tech-icons">
-          <SiCypress />
-        </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <SiR />
-        </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <DiPython />
-        </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <AiFillGithub />
-        </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <SiAtlassian />
-        </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <DiReact />
-        </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <SiWordpress />
-        </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <DiPhotoshop />
-        </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <SiAdobeillustrator />
-        </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <DiMailchimp />
-        </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <DiScrum />
-        </Col>
+        {skills.map((s) => (
+          <SkillIcon key={s.name} name={s.name} icon={s.icon} />
+        ))}
       </Row>
     </>
   );
