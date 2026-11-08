@@ -8,6 +8,9 @@ import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
+// Disable eval in pdf.js (mitigates CVE-2024-4367). Defined outside the component so it isn't recreated each render.
+const pdfOptions = { isEvalSupported: false };
+
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
 
@@ -24,7 +27,7 @@ function ResumeNew() {
           <Button
             variant="primary"
             href={pdf}
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
             style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload />
@@ -33,7 +36,7 @@ function ResumeNew() {
         </Row>
 
         <Row className="resume">
-          <Document file={pdf} className="d-flex justify-content-center">
+          <Document file={pdf} options={pdfOptions} className="d-flex justify-content-center">
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
         </Row>
@@ -42,7 +45,7 @@ function ResumeNew() {
           <Button
             variant="primary"
             href={pdf}
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
             style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload />
